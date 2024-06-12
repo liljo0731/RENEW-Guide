@@ -1,0 +1,736 @@
+:root {
+    
+/** [HERON] CSS STYLING
+    With the use of CSS variables, you don't need to scroll through the whole code to edit the appearance of the page; you can do so in this single block!
+
+    
+****************************************** GLOBAL APPEARANCE OPTIONS **/
+    --mainfont: nunito;
+    --scrollbar: #edc291;
+    --text-highlight: #edc291;
+    
+    --BGcolour: #eaeaea; /** only shows up if no bg img below **/
+/*    --BGimageURl: url="/20211118 Milky Way.jpg";*/
+/*    --BGimageURL: url("https://cdn2.webdamdb.com/220th_sm_wT0xidICbbO0124B.png?1633554365");*/
+    --BGimageURL: url("https://images.unsplash.com/photo-1608914981498-5b8431aa92b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+    /** replace the word [XUE] with your own background image URL **/
+    
+    --BGwallpaper: cover; 
+    /**  auto = repeated bg
+         cover = stretched as a wallpaper **/
+
+
+/******************************************************* THE BASICS **/
+    
+    /** tooltips = the small pop-up next to your mouse
+        when you hover over links **/
+    --tooltipBG: 0,0,0; /** RGB colour values **/
+    --tooltipColour: #ffffff;
+    
+    
+/******************************************************* MAIN CONTENT **/
+    --windowBG: #eaeaea; /** grey area **/
+    --contentBG: #ffffff;
+    --txtcolour: #444444; /** default font colour **/
+    --translucent-border: 255,255,255; /** RGB values **/
+    
+    /** header icon **/
+    --header-iconBG: #66a9ba; /* deep blue by default */
+    --header-icon: #ffffff;
+    --header-icon-code: '\ed12'; /** default: wheat **/
+    /** 1. go to https://cappuccicons.com/
+        2. scroll down & choose the icon you like
+        3. copy the icon code and replace the one above **/
+        
+    /** navigation buttons -- i.e, intro, tags, following, contact **/
+    --nav-colour: #aaaaaa; /** default text colour **/
+    
+    /** colour when hovered **/
+    --nav-hover-BG: #e6e6e6;
+    --nav-hover-colour: #333333;
+    
+    /** colour when panel is active (panel is showing) **/
+    --nav-active-BG: #f0e3ad; 
+    --nav-active-colour: #c27d3c;
+
+
+/********************************************************* INTRO PAGE **/
+    /** left photo **/ 
+    --abt-photoURL: url("https://images.unsplash.com/photo-1608914981193-a6bc79e8a909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    
+    /** basic info intro (below photo) **/
+    --abt-label: #edc291; /** "name", "location", etc **/
+    
+    /** biography **/
+    --abt-header: #abcadb; /** 1st letter and h2 blocks **/
+    --abt-bold: #6a7d99; /** bolded text **/
+    --abt-italic: #aaaaaa; /** italic text **/
+    --abt-link-BG: #f1f1f1; /** links **/
+    --abt-link-txt: #444444;
+    --abt-blockquote-BG: #f1f1f1;
+    --abt-blockquote-border: #dddddd;
+    --abt-blockquote-quotationmarks: #cacaca; /** quotation mark icon **/
+    
+
+/********************************************************** TAGS LIST **/
+    /** left photo **/
+    --tag-photoURL: url("https://images.unsplash.com/photo-1608914998172-587b1b25f247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    
+    /** tag block categories
+        There are three colour ways that are alternated. **/
+    --tag-category-A-BG: #66a9ba;
+    --tag-category-A-txt: #ffffff;
+    
+    --tag-category-B-BG: #d9ab5b;
+    --tag-category-B-txt: #ffffff;
+    
+    --tag-category-C-BG: #f0e3ad;
+    --tag-category-C-txt: #9c6527;
+
+    /** tag link buttons **/
+    --tag-link-BG: #f6f6f6;
+    --tag-link-txt: #444444;
+    --tag-link-border: #dadada;
+    --tag-link-BG-hovered: #f8f8f8; /** when hovered **/
+    --tag-link-txt-hovered: #000000;
+
+
+/*********************************************************** BLOGROLL **/
+    /** left photo **/
+    --fol-photoURL: url("https://images.unsplash.com/photo-1608914970686-59282a504703?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    
+    /** visit blog icon link **/
+    --fol-visit-icon-BG: #eaeaea;
+    --fol-visit-icon: #aaaaaa;
+    
+    /** follow blog icon link **/
+    --fol-follow-icon-BG: #66a9ba;
+    --fol-follow-icon: #ffffff;
+    
+    --fol-info-username: #444444;
+    --fol-info-blogtitle: #aaaaaa;
+    
+
+/*********************************************************** CONTACT **/
+    /** left photo **/
+    --qna-photoURL: url("https://images.unsplash.com/photo-1608914997960-84426bb5b313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    
+    /** the small QNA before each question **/
+    --qna-label-BG: #f0e3ad;
+    --qna-label-txt: #9c6527;
+    
+    /** active qna question bg & text **/
+    --qna-active-qn-BG: #f0e3ad;
+    --qna-active-qn-txt: #9c6527;
+}
+
+/** ======================================================== THE BASICS **/
+
+body {
+    background-color: var(--BGcolour);
+    background-image: var(--BGimageURL);
+    background-size: var(--BGwallpaper);
+    background-attachment: fixed;
+    font-family: var(--mainfont),sans-serif;
+}
+
+a { text-decoration: none; }
+p:first-child { margin-top: 0; }
+p:last-child { margin-bottom: 0; }
+
+/** tool tips **/
+
+#s-m-t-tooltip {
+    z-index: 1000000000000000000000000000000000000;
+    max-width: 300px;
+    letter-spacing: 1px;
+    font-family: nunito;
+    font-size: 10px;
+    padding: 4px 8px;
+    margin: 20px 0 0 10px;
+    border-radius: 7px;
+    background-color: rgba(var(--tooltipBG),0.8);
+    color: var(--tooltipColour);
+}
+
+/** scrollbar **/
+
+::-webkit-scrollbar { width: 18px; }
+::-webkit-scrollbar-track-piece { 
+    background-color: var(--contentBG);
+}  
+
+::-webkit-scrollbar-thumb:vertical {
+    width: 8px;
+    border: 4px solid var(--contentBG);
+    background: var(--scrollbar);
+    border-radius: 100px;
+}
+
+
+/** text selection **/
+
+::selection {
+    color: #ffffff;
+    background-color: var(--text-highlight);
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background-color: var(--text-highlight);
+}
+
+::-webkit-selection {
+    color: #ffffff;
+    background-color: var(--text-highlight);
+}
+
+/** tumblr controls **/
+/*iframe#tumblr_controls, .iframe-controls--desktop {
+    position: fixed!important;
+    top: 8px!important;
+    right: 8px!important;
+    transform: scale(0.8);
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+    z-index: 1500!important;
+}*/
+
+/** ============================================== MAIN CONTENT WINDOW **/
+
+.maincon {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    padding: 30px;
+    width: 540px;
+    background: #888;
+    position: fixed;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: calc(50% - 300px); /** half of the width **/
+    
+    background-color: rgba(var(--translucent-border),0.3);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(var(--translucent-border),0.6);
+}
+
+
+/** ========================================= HEADER / NAVIGATION BAR **/
+
+.header {
+    width: 540px;
+    height: 60px;
+    background-color: var(--contentBG);
+    overflow: hidden;
+}
+
+.header-left {
+    background-color: var(--header-iconBG);
+    width: 90px;
+    height: 60px;
+    float: left;
+}
+
+.header-left-cov {
+    background-color: var(--contentBG);
+    width: 70px;
+    height: 70px;
+    margin: -5px 60px;
+    border-radius: 100px;
+}
+
+.header-icon {
+    position: absolute;
+    width: 20px;
+    margin: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--header-icon);
+}
+
+.header-icon:before {
+    content: var(--header-icon-code);
+    font-family:'cappuccicons';
+}
+
+.header-nav {
+    display: flex;
+}
+
+/** navigation buttons **/
+
+.hbtn {
+    font-size: 12px;
+    cursor: pointer;
+    margin: 20px 10px 20px 0;
+    line-height: 20px;
+    padding: 0 6px;
+    border-radius: 4px;
+    transition: 0.6s;
+    color: var(--nav-colour);
+}
+
+.hbtn:hover {
+    color: var(--nav-hover-colour);
+    background-color: var(--nav-hover-BG);
+}
+
+.hbtn-active {
+    color: var(--nav-active-colour);
+    background-color: var(--nav-active-BG);
+}
+
+.hbtn-active:hover {
+    color: var(--nav-active-colour);
+    background-color: var(--nav-active-BG);
+}
+
+.hpfp {
+    position: absolute;
+    margin: 15px 405px;
+    border-radius: 6px;
+}
+
+/** ===================================================== CAROUSEL PANELS **/
+
+.content {
+    border: 20px solid var(--windowBG);
+    background-color: var(--windowBG);
+    height: 300px;
+    overflow: hidden;
+}
+
+.allviews {
+    transition: 0.6s ease-in-out;
+    width: 2000px;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.view {
+    float: left;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/** ============================================================== ABOUT **/
+
+.abt-layout {height: 300px;}
+
+.abt-basic {
+    width: 150px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.abt-photo {
+    background-image: var(--abt-photoURL);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+
+.abt-pts {
+    background-color: var(--contentBG);
+    border-radius: 0 0 10px 10px;
+}
+
+.abt-ptline {
+    padding: 5px 10px;
+    text-align: right;
+    font-size: 12px;
+    border-bottom: 1px solid var(--windowBG);
+    color: var(--txtcolour);
+}
+
+.abt-pttitle {
+    position: relative;
+    height: 0;
+    text-align: left;
+    line-height: 17px;
+    font-family: nunito;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    color: var(--abt-label);
+}
+
+.abt-bio {
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+    padding: 20px 10px 20px 20px;
+    background-color: var(--contentBG);
+    border-radius: 10px;
+}
+
+.bio-graphy {
+    font-size: 12px;
+    line-height: 20px;
+    height: 260px;
+    overflow-y: auto;
+    padding-right: 10px;
+    text-align: justify;
+    color: var(--txtcolour);
+}
+
+.bio-graphy:first-letter {
+    font-size: 40px;
+    float: left;
+    font-family: fredoka one;
+    color: var(--abt-header);
+    margin: 10px 6px 0 0;
+    text-transform: uppercase;
+}
+
+.bio-graphy blockquote {
+    background-color: var(--abt-blockquote-BG);
+    border: 1px solid var(--abt-blockquote-border);
+    border-radius: 10px;
+    margin: 0;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 10px 15px;
+}
+
+.bio-graphy blockquote:before {
+    content: "\ec2b";
+    font-family: "cappuccicons";
+    width: 0;
+    height: 0;
+    position: relative;
+    color: var(--abt-blockquote-quotationmarks);
+    margin: 0 8px 0 0;
+    font-size: 10px;
+}
+
+.bio-graphy blockquote a { 
+    padding: 0;
+    background: transparent;
+}
+
+.bio-graphy b,strong, .qna-block b,strong {
+    color: var(--abt-bold);
+}
+
+.bio-graphy a, .qna-block a {
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    padding: 3px 5px;
+    border-radius: 4px;
+    margin: 0 2px 0 2px;
+    color: var(--abt-link-txt);
+    background-color: var(--abt-link-BG);
+}
+
+.bio-graphy i,em, .qna-block i,em {
+    color: var(--abt-italic);
+    font-style: normal;
+}
+
+.bio-graphy h2 {
+    font-size: 14px;
+    font-family: fredoka one;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--abt-header);
+    margin: 20px 0 -5px 0;
+}
+
+ul {
+    margin-left: -10px;
+    list-style-type: square;
+}
+
+ol {margin-left: -10px;}
+li { margin-bottom: 5px; }
+   
+/** =========================================================== TAGSLIST **/
+
+.view-photo {
+    width: 150px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.tag-photo {
+    background-image: var(--tag-photoURL);
+}
+
+.tag-con {
+    width: 340px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.tag-con::-webkit-scrollbar-track-piece{background-color: var(--windowBG);}
+.tag-con::-webkit-scrollbar-thumb:vertical{border: 4px solid var(--windowBG);}
+
+.tag-block {
+    display: inline-block;
+    float: left;
+    margin: 0 0 10px 10px;
+    width: 150px;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.tag-category {
+    padding: 6px 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    position: sticky;
+    top: 0;
+}
+
+.tag-block:nth-child(3n+0) .tag-category {
+    background-color: var(--tag-category-A-BG);
+    color: var(--tag-category-A-txt);
+}
+
+.tag-block:nth-child(3n+1) .tag-category {
+    background-color: var(--tag-category-B-BG);
+    color: var(--tag-category-B-txt);
+}
+
+.tag-block:nth-child(3n+2) .tag-category {
+    background-color: var(--tag-category-C-BG);
+    color: var(--tag-category-C-txt);
+}
+
+.tag-btn {
+    margin-top: 2px;
+    padding: 2px 6px;
+    transition: 0.3s ease-in-out;
+    border-left: 4px solid var(--tag-link-border);
+    background-color: var(--tag-link-BG);
+    color: var(--tag-link-txt);
+}
+
+.tag-btn:hover {
+    background-color: var(--tag-link-BG-hovered);
+    color: var(--tag-link-txt-hovered);
+}
+
+.tag-block:nth-child(3n+0) .tag-btn:hover {
+    border-left: 4px solid var(--tag-category-A-BG);
+}
+
+.tag-block:nth-child(3n+1) .tag-btn:hover {
+    border-left: 4px solid var(--tag-category-B-BG);
+}
+
+.tag-block:nth-child(3n+2) .tag-btn:hover {
+    border-left: 4px solid var(--tag-category-C-BG);
+}
+
+/** ========================================================== BLOGROLL **/
+
+.fol-photo {
+    background-image: var(--fol-photoURL);
+    margin-right: 20px;
+}
+
+.fol-content::-webkit-scrollbar-track-piece { 
+    background-color: var(--windowBG);
+}
+
+.fol-content::-webkit-scrollbar-thumb:vertical { 
+    border: 4px solid var(--windowBG);
+}
+
+.fol-content {
+    padding-right: 10px;
+    float: left;
+    width: 320px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.fol-block {
+    border-radius: 10px;
+    padding: 15px 0 15px 15px;
+    height: 40px;
+    background-color: var(--contentBG);
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.fol-block:last-child { margin-bottom: 0; }
+
+.fol-actions {
+    width: 80px;
+    float: left;
+    margin: 8px 0;
+}
+
+.fol-acticon {
+    float: left;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 7px;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.acticon1 { 
+    background-color: var(--fol-visit-icon-BG);
+    color: var(--fol-visit-icon);
+}
+
+.acticon2 {
+    background-color: var(--fol-follow-icon-BG);
+    color: var(--fol-follow-icon);
+}
+
+.fol-pfp {
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+}
+
+.fol-info {
+    width: 140px;
+    float: left;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+.fol-info-un {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--fol-info-username);
+}
+
+.fol-info-ti {
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 1000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 4px;
+    color: var(--fol-info-blogtitle);
+}
+
+/** ============================================================ CONTACT **/
+
+.qna-photo {
+    background-image: var(--qna-photoURL);
+    margin-right: 20px;
+}
+
+.qna-content {
+    float: left;
+    width: 310px;
+    height: 300px;
+    overflow-y: auto;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.qna-content::-webkit-scrollbar-track-piece { 
+    background-color: var(--windowBG); 
+}  
+
+.qna-content::-webkit-scrollbar-thumb:vertical { 
+    border: 4px solid var(--windowBG); 
+}
+
+.qna-block {
+    margin-bottom: 10px;
+}
+
+.qna-block:last-child { margin-bottom: 0; }
+
+.qna-qn {
+    line-height: 25px;
+    font-size: 13px;
+    background-color: var(--contentBG);
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 280px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.qna-qn:before {
+    content: "QNA";
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    padding: 3px 5px;
+    margin: 0 8px 0 0;
+    border-radius: 6px;
+    background-color: var(--qna-label-BG);
+    color: var(--qna-label-txt);
+}
+
+.qna-ans {
+    line-height: 18px;
+    background-color: var(--contentBG);
+    padding: 10px 15px;
+    width: 270px;
+    border-radius: 0 0 10px 10px;
+    font-size: 11px;
+    display: none;
+}
+
+.qna-qn-active {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--qna-active-qn-BG);
+    color: var(--qna-active-qn-txt);
+}
+
+.qna-notice {
+    margin-bottom: 20px;
+    background-color: var(--contentBG);
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    line-height: 18px;
+}
+
+.qna-notice-title {
+    font-size: 14px;
+    font-family: fredoka one;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--abt-header);
+    margin: 0 0 10px 0;
+}
+
+</style>
