@@ -10,9 +10,8 @@
     --text-highlight: #edc291;
     
     --BGcolour: #eaeaea; /** only shows up if no bg img below **/
-/*    --BGimageURl: url="/20211118 Milky Way.jpg";*/
-/*    --BGimageURL: url("https://cdn2.webdamdb.com/220th_sm_wT0xidICbbO0124B.png?1633554365");*/
-    --BGimageURL: url("https://images.unsplash.com/photo-1608914981498-5b8431aa92b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    --BGimageURl: url("../images/20211118 Milky Way.jpg");
+/*    --BGimageURL: url("https://images.unsplash.com/photo-1608914981498-5b8431aa92b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");*/
 
     /** replace the word [XUE] with your own background image URL **/
     
@@ -51,22 +50,23 @@
     --nav-hover-colour: #333333;
     
     /** colour when panel is active (panel is showing) **/
-    --nav-active-BG: #f0e3ad; 
-    --nav-active-colour: #c27d3c;
+    --nav-active-BG: #c9233d80; 
+    --nav-active-colour: #ab1d31;
 
 
 /********************************************************* INTRO PAGE **/
     /** left photo **/ 
     --abt-photoURL: url("https://images.unsplash.com/photo-1608914981193-a6bc79e8a909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    
+    --abt-photoCB: #ab1d31; /** color bar instead of photo **/
+
     /** basic info intro (below photo) **/
     --abt-label: #edc291; /** "name", "location", etc **/
     
     /** biography **/
-    --abt-header: #375d76; /** 1st letter and h2 blocks **/
-    --abt-header2: #6a7d99; /** h3 blocks **/
-    --abt-bold: #abcadb; /** bolded text **/
-    --abt-italic: #aaaaaa; /** italic text **/
+    --abt-header: #ab1d31; /** 1st letter and h2 blocks **/
+    --abt-header2: #c9233d; /** h3 blocks **/
+    --abt-bold: #c9425a; /** bolded text **/
+    --abt-italic: #040404; /** italic text **/
     --abt-link-BG: #f1f1f1; /** links **/
     --abt-link-txt: #444444;
     --abt-blockquote-BG: #f1f1f1;
@@ -115,14 +115,16 @@
 
 /*********************************************************** CONTACT **/
     /** left photo **/
-    --qna-photoURL: url("https://images.unsplash.com/photo-1608914997960-84426bb5b313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    --qna-photoURL: url("https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg");
     
     /** the small QNA before each question **/
-    --qna-label-BG: #f0e3ad;
-    --qna-label-txt: #9c6527;
+/*    --qna-label-BG: #f0e3ad;*/
+    --qna-label-BG: var(--nav-active-BG);
+/*    --qna-label-txt: #9c6527;*/
+    --qna-label-txt: var(--nav-active-colour);
     
     /** active qna question bg & text **/
-    --qna-active-qn-BG: #f0e3ad;
+    --qna-active-qn-BG: #4c4c4c99;
     --qna-active-qn-txt: #9c6527;
 }
 
@@ -130,7 +132,8 @@
 
 body {
     background-color: var(--BGcolour);
-    background-image: var(--BGimageURL);
+/*    background-image: var(--BGimageURL);*/
+    background-image: url("../images/20211118 Milky Way.jpg");
     background-size: var(--BGwallpaper);
     background-attachment: fixed;
     font-family: var(--mainfont),sans-serif;
@@ -274,7 +277,7 @@ p:last-child { margin-bottom: 0; }
 /** navigation buttons **/
 
 .hbtn {
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
     margin: 20px 10px 20px 0;
     line-height: 20px;
@@ -344,12 +347,12 @@ p:last-child { margin-bottom: 0; }
 }
 
 .abt-photo {
-    background-image: var(--abt-photoURL);
+/*    background-image: var(--abt-photoURL);*/
+    background-color: var(--abt-photoCB);
     background-size: cover;
     background-position: center;
-/*    width: 150px;*/
     height: 100%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     display: block;
 }
 
@@ -389,8 +392,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .bio-graphy {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     height: 100%;
     overflow-y: auto;
     padding-right: 10px;
@@ -412,8 +415,8 @@ p:last-child { margin-bottom: 0; }
     border: 1px solid var(--abt-blockquote-border);
     border-radius: 10px;
     margin: 0;
-    font-size: 10px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 22px;
     padding: 10px 15px;
 }
 
@@ -438,11 +441,11 @@ p:last-child { margin-bottom: 0; }
 }
 
 .bio-graphy a, .qna-block a {
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 1000;
-    padding: 3px 5px;
+    padding: 4px 6px;
     border-radius: 4px;
     margin: 0 2px 0 2px;
     color: var(--abt-link-txt);
@@ -451,11 +454,11 @@ p:last-child { margin-bottom: 0; }
 
 .bio-graphy i,em, .qna-block i,em {
     color: var(--abt-italic);
-    font-style: normal;
+    font-style: italic;
 }
 
 .bio-graphy h2 {
-    font-size: 14px;
+    font-size: 18px;
     font-family: fredoka one;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -464,7 +467,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .bio-graphy h3 {
-    font-size: 12px;
+    font-size: 16px;
     font-family: fredoka one;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -472,9 +475,13 @@ p:last-child { margin-bottom: 0; }
     margin: 20px 0 -5px 0;
 }
 
-ul {
+ul.a {
     margin-left: -10px;
-    list-style-type: square;
+    list-style-type:disc;
+}
+ul.b {
+    margin-left: -10px;
+    list-style-type: circle;
 }
 
 ol {margin-left: -10px;}
@@ -483,13 +490,14 @@ li { margin-bottom: 5px; }
 /** =========================================================== TAGSLIST **/
 
 .view-photo {
-    width: 150px;
-    height: 600px;
+    width: 20%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     float: left;
     margin-right: 10px;
+    display:block;
 }
 
 .tag-photo {
@@ -673,11 +681,11 @@ li { margin-bottom: 5px; }
 
 .qna-content {
     float: left;
-    width: 310px;
+    width: calc(80% - 40px);
     height: 300px;
     overflow-y: auto;
     padding-right: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .qna-content::-webkit-scrollbar-track-piece { 
@@ -700,14 +708,14 @@ li { margin-bottom: 5px; }
     background-color: var(--contentBG);
     border-radius: 10px;
     padding: 10px 10px;
-    width: 280px;
+/*    width: 280px;*/
     cursor: pointer;
     transition: 0.6s ease-in-out;
 }
 
 .qna-qn:before {
-    content: "QNA";
-    font-size: 10px;
+    content: "Question:";
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 1000;
@@ -722,16 +730,18 @@ li { margin-bottom: 5px; }
     line-height: 18px;
     background-color: var(--contentBG);
     padding: 10px 15px;
-    width: 270px;
+/*    width: 270px;*/
+    width:calc(100% - 10 px);
     border-radius: 0 0 10px 10px;
-    font-size: 11px;
+    font-size: 14px;
     display: none;
 }
 
 .qna-qn-active {
     border-radius: 10px 10px 0 0;
     background-color: var(--qna-active-qn-BG);
-    color: var(--qna-active-qn-txt);
+/*    color: var(--qna-active-qn-txt);*/
+    color: #ffffff;
 }
 
 .qna-notice {
@@ -752,4 +762,3 @@ li { margin-bottom: 5px; }
     margin: 0 0 10px 0;
 }
 
-</style>

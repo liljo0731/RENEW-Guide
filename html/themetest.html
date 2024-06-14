@@ -31,19 +31,15 @@ To edit this page, you will have to edit:
 
 Look out for my comments (greyed out text) like this.
 
-VERY IMPORTANT; for your ask box to work, make sure
-you have added your username where instructed. Use
-ctrl+F to search for [BITTERN] to jump there.
-
 --------------------------------------------------->
 
 <!-- edit [about] below to change the text on the browser tab -->
-<title>about</title>
+<title>Getting Started at RENEW</title>
 
 <!-- replace [{Favicon}] below with an image URL to have a custom favicon 
      favicon = the small icon on browser tabs; by default it's your pfp. -->
-<link rel="shortcut icon" href="{Favicon}" />
-<link rel="stylesheet" type="text/css" href="themestyles.css">
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="stylesheet" type="text/css" href="../css/themestyles.css">
 
 </head>
 <body>
@@ -64,10 +60,10 @@ ctrl+F to search for [BITTERN] to jump there.
     <div class="header-nav">
     <!-- header navigation buttons -->
     <!-- you can edit the titles of the sections below -->
-    <div class="hbtn hbtn-one hbtn-active">   about         </div>
-    <div class="hbtn hbtn-two">               tags          </div>
+    <div class="hbtn hbtn-one hbtn-active">   Guide         </div>
+    <div class="hbtn hbtn-two">               Contact          </div>
     <!-- <div class="hbtn hbtn-three">             following     </div> -->
-    <div class="hbtn hbtn-three">              contact       </div>
+    <!-- <div class="hbtn hbtn-three">              tags       </div> -->
     <!-- <div class="hbtn hbtn-four">              contact       </div> -->
     </div>
     
@@ -111,6 +107,11 @@ ctrl+F to search for [BITTERN] to jump there.
         <div class="bio-graphy">
         
 <!-- Replace this text with your own bio --------------------------------->
+<p>Welcome to RENEW at Benedictine University! We are so happy to have you here. In order to get started, there are a lot of tasks for you to complete and bakground information you need to know. Depending on your previous experiences with both astronomy and programming, some of this information may be redundant. If it is, skim through the material and double-check that you understand it's content before you move on to the next objective. There will be a skill quiz at the end, so make sure you thoroughly understand the content.</p>
+
+
+
+
         
 <p>The first letter in your bio is capitalised. Do not start the bio with a header or a blockquote block. This is how you <b>bold</b> text. Add in some <i>italics</i> for some pizazz. And of course, a <a href="URL" title="hover title">link</a> to your favourite pages. A scrollbar automatically appears if your bio gets too long.</p>
 
@@ -130,19 +131,19 @@ ctrl+F to search for [BITTERN] to jump there.
 
 <p>Or instead, you can have an <b>unordered</b> list:</p>
 
-<ul>
+<ul class= "a">
     <li>Great for listing stuff out</li>
     <li>that has no order</li>
     <li>like a wishlist or to-do list</li>
 </ul>
 <p>I am adding a whole bunch of random text here to test the appearance of the scrollbar. vshbvdshg  dsgfhs</p>
-<ul>
+<ul class ="a">
     <li>Here is a big list so that it takes up space faster</li>
     <li>ABC</li>
     <li>It's easy as</li>
     <li>123</li>
     <li> Aw simple as</li>
-    <ul>
+    <ul class="b">
         <li>Do</li>
         <li>Re</li>
         <li>Mi</li>
@@ -170,9 +171,9 @@ ctrl+F to search for [BITTERN] to jump there.
 </div><!-- end of INTRO panel -->
     
 
-<div class="view"><!-- tags list panel ------------------------------------->
-    <div class="view-photo tag-photo"></div>
-    <div class="tag-con">
+<!-- <div class="view"><-- tags list panel ------------------------------------->
+    <!-- <div class="view-photo tag-photo"></div> -->
+    <!-- <div class="tag-con"> -->
 
 <!--
 
@@ -212,8 +213,8 @@ Each tag blog consists of a CATEGORY and the TAGS. Copy and paste the block belo
             <a href="/tagged/"><div class="tag-btn">tag</div></a>
         </div> -->
         
-     </div><!--tag-con--> 
-</div><!-- end of TAGSLIST panel-->
+     <!-- </div><--tag-con-->  
+<!-- </div><-- end of TAGSLIST panel-->
 
 
 <div class="view"><!-- contact panel --------------------------------------->
@@ -232,10 +233,21 @@ Each tag blog consists of a CATEGORY and the TAGS. Copy and paste the block belo
     -->
     
     <div class="qna-block">
+        <div class="qna-qn">Click here if you have questions.</div>
+        <div class="qna-ans">
+            <p>Feel free to contact us! </p>
+            <p>For questions about the site/content, contact Lilly Joseph at <a href="mailto:ljoseph@ben.edu">ljoseph@ben.edu</a>.</p>
+
+            <p>For questions about RENEW at Benedictine and how you can join, please contact Dr. Matthew Wiesner at <a href="mailto:mwiesner@ben.edu">mwiesner@ben.edu</a></p>
+            </div>
+    </div>
+    
+<!--     
+    <div class="qna-block">
         <div class="qna-qn">The question?</div>
         <div class="qna-ans">The answer.</div>
     </div>
-    
+     -->
     
     
     <!-- ASKING GUIDELINES -----------------------------------------------
@@ -319,7 +331,7 @@ $(".hbtn-two").click(function(){
     $(".hbtn-two").addClass("hbtn-active");
     $(".hbtn-three").removeClass("hbtn-active");
     $(".hbtn-four").removeClass("hbtn-active");
-    $(".allviews").css("margin-left", "-1600px");
+    $(".allviews").css("margin-left", "calc(-100%)");
 });
     
 $(".hbtn-three").click(function(){
@@ -327,7 +339,7 @@ $(".hbtn-three").click(function(){
     $(".hbtn-two").removeClass("hbtn-active");
     $(".hbtn-three").addClass("hbtn-active");
     $(".hbtn-four").removeClass("hbtn-active");
-    $(".allviews").css("margin-left", "-3200px");
+    $(".allviews").css("margin-left", "calc(-200%)");
 });
     
 $(".hbtn-four").click(function(){
@@ -335,7 +347,7 @@ $(".hbtn-four").click(function(){
     $(".hbtn-two").removeClass("hbtn-active");
     $(".hbtn-three").removeClass("hbtn-active");
     $(".hbtn-four").addClass("hbtn-active");
-    $(".allviews").css("margin-left", "-4800px");
+    $(".allviews").css("margin-left", "calc(-300%)");
 });
     
 $(".qna-qn").click(function(){
