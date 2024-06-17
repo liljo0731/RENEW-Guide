@@ -65,10 +65,12 @@
     /** biography **/
     --abt-header: #ab1d31; /** 1st letter and h2 blocks **/
     --abt-header2: #c9233d; /** h3 blocks **/
+    --abt-header3: #d03149 ; /** h4 blocks **/
     --abt-bold: #c9425a; /** bolded text **/
     --abt-italic: #040404; /** italic text **/
     --abt-link-BG: #f1f1f1; /** links **/
-    --abt-link-txt: #444444;
+/*    --abt-link-txt: #444444;*/
+    --abt-link-txt: #ab1d31;
     --abt-blockquote-BG: #f1f1f1;
     --abt-blockquote-border: #dddddd;
     --abt-blockquote-quotationmarks: #cacaca; /** quotation mark icon **/
@@ -190,17 +192,24 @@ p:last-child { margin-bottom: 0; }
     background-color: var(--text-highlight);
 }
 
-/** tumblr controls **/
-/*iframe#tumblr_controls, .iframe-controls--desktop {
-    position: fixed!important;
-    top: 8px!important;
-    right: 8px!important;
-    transform: scale(0.8);
-    -webkit-transform-origin: top right;
-    -ms-transform-origin: top right;
-    transform-origin: top right;
-    z-index: 1500!important;
-}*/
+/** Fraction display* */
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid black;
+}
+.frac span.symbol {
+    display: none;
+} 
 
 /** ============================================== MAIN CONTENT WINDOW **/
 
@@ -440,7 +449,19 @@ p:last-child { margin-bottom: 0; }
     color: var(--abt-bold);
 }
 
-.bio-graphy a, .qna-block a {
+.bio-graphy a {
+    font-size: 14px;
+/*    text-transform: uppercase;*/
+    letter-spacing: 1px;
+    font-weight: 1000;
+    padding: 2px 2px;
+    border-radius: 4px;
+    margin: 0 2px 0 2px;
+    color: var(--abt-link-txt);
+    background-color: var(--abt-link-BG);
+}
+
+.qna-block a {
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -451,7 +472,6 @@ p:last-child { margin-bottom: 0; }
     color: var(--abt-link-txt);
     background-color: var(--abt-link-BG);
 }
-
 
 .bio-graphy i,em, .qna-block i,em {
     color: var(--abt-italic);
@@ -473,6 +493,15 @@ p:last-child { margin-bottom: 0; }
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--abt-header2);
+    margin: 20px 0 -5px 0;
+}
+
+.bio-graphy h4 {
+    font-size: 14px;
+    font-family: fredoka one;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--abt-header3);
     margin: 20px 0 -5px 0;
 }
 
