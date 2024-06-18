@@ -65,7 +65,7 @@ Look out for my comments (greyed out text) like this.
     <!-- header navigation buttons -->
     <!-- you can edit the titles of the sections below -->
     <div class="hbtn hbtn-one hbtn-active">   Guide         </div>
-    <div class="hbtn hbtn-two">               Contact          </div>
+    <div class="hbtn hbtn-three">               Contact          </div>
     <!-- <div class="hbtn hbtn-three">             following     </div> -->
     <!-- <div class="hbtn hbtn-three">              tags       </div> -->
     <!-- <div class="hbtn hbtn-four">              contact       </div> -->
@@ -118,7 +118,6 @@ Look out for my comments (greyed out text) like this.
 <p>
 <a href="https://rsp.lsst.io/guides/getting-started/get-an-account.html" title="Rubin Science Platform">The Rubin Science Platform (RSP)</a> is a powerful computing platform that has access to simulated data like LSST will produce. We will discuss more about LSST and Rubin later, but first request access to the RSP, as you will need it for the duration of the program.
 <br>
-<br>
 <a href="http://community.lsst.org" title="Rubin Community Forums">Rubin Community Forums</a>: After you gain access to the RSP, if you have any questions for how to select certain types of data or manipulate it in a specific way, you can check here to see if someone has already done that, or you can post a question yourself. You may also check with Dr. Wiesner to see if he is familiar with what you are trying to do.
  </p>
 
@@ -129,30 +128,69 @@ Look out for my comments (greyed out text) like this.
         <li><a href="https://www.youtube.com/watch?v=h6QYjNjivDE"> What is the Rubin Observatory?</a></li>
     </ol>
 
-<h2>Astronomy</h2>
+<h2 id="astronomy">Astronomy</h2>
 <p>There are some important pieces of astronomy knowledge you will need to know in order to proceed with your project. This list will get you started with some items you will need to understand. If there are things in the articles or explanations that don't make sense, dive deeper into the terminology you don't understand and do some research on your own. Feel free to also ask your advisors for help if there is something you get stuck on.</p>
 
-<h3>What is a kilonova?</h3> 
-<p class="indent1">
+<h3 class="indent1">What is a kilonova?</h3> 
+<p class="indent2">
 A kilonova is a merger between two neutron stars or a neutron star and a black hole. The Kilonova Data Challenge primarily focuses on modeling the binary neutron star type of kilonova.  
 
 The most famous kilonova to date is the event called GW170817. It is famous for being the first gravitational wave detection detected by non-gravitational wave detectors- that is, it was detected in electromagnetic spectrum observations as well. 
 </p>
-<p class="indent1">
+<p class="indent2">
     For more info on kilonovae and transients, check out the <a href="https://astrobites.org/2022/10/30/guide-to-transient-astronomy/">Astrobites Guide to Transient Astronomy</a>. You should read through the sections on kilonovae (singular KN, plural KNe) and supernovae. While we are not searching for supernovae directly, it is important to know the distinction between them and kilonovae, as we will likely come across them in our KN search.
 </p>
 
-<h3>What are Right Ascension and Declination?</h3>
-    <div style="display:inline-block;margin-left:3em;margin-top:1em;">
+
+<h3 class="indent1">What are Right Ascension and Declination?</h3>
+    <p class="indent2">
     <a href="https://en.wikipedia.org/wiki/Right_ascension" title="Right ascension wikipedia">Right ascension</a> and <a href="https://en.wikipedia.org/wiki/Declination" title="Declination wikipedia">declination</a> are two dimensions of the equatorial coordinate system, which is most commonly used to refer to the positions of astronomical objects. Its origin is Earth's center, which makes it a geocentric coordinate system. It is also a spherical coordinate system, rather than rectangular. Right ascension is the equivalent to longitude, and declination is the equivalent to latitude.
-    <ul>
-        <li>Right ascension is measured in hours, minutes, and seconds. There are 60 minutes in an hour and 60 seconds in a minute, the same way time is measured. These smaller units are also commonly called arcminutes and arcseconds, to differentiate them from units of time measurement. This means that a perfect circle is 24 hours. In other words, a single hour of right ascension is equivalent to <sup>360&deg;</sup>&frasl;<sub>24h</sub>= 15&deg;. An arcminute is <sup>1</sup>&frasl;<sub>60</sub> of an hour, or <sup>1</sup>&frasl;<sub>1440</sub> of a circle. An arcsecond is <sup>1</sup>&frasl;<sub>3600</sub> of an hour, or <sup>1</sup>&frasl;<sub>86400</sub> of a circle. 
-            <blockquote>As an example, the moon is approximately 31 arcminutes in size, or a little more than <sup>1</sup>&frasl;<sub>2</sub> of an hour. </blockquote>
-             Hours are typically denoted by the letter h, arcminutes by the symbol ', and arcseconds by the symbol ".   
+        <ul class="indent2">
+            <li>Right ascension is measured in hours, minutes, and seconds. There are 60 minutes in an hour and 60 seconds in a minute, the same way time is measured. These smaller units are also commonly called arcminutes and arcseconds, to differentiate them from units of time measurement. This means that a perfect circle is 24 hours. In other words, a single hour of right ascension is equivalent to <sup>360&deg;</sup>&frasl;<sub>24h</sub>= 15&deg;. An arcminute is <sup>1</sup>&frasl;<sub>60</sub> of an hour, or <sup>1</sup>&frasl;<sub>1440</sub> of a circle. An arcsecond is <sup>1</sup>&frasl;<sub>3600</sub> of an hour, or <sup>1</sup>&frasl;<sub>86400</sub> of a circle. 
+                <blockquote>As an example, the moon is approximately 31 arcminutes in size, or a little more than <sup>1</sup>&frasl;<sub>2</sub> of an hour. </blockquote>
+                 Hours are typically denoted by the letter h, arcminutes by the symbol ', and arcseconds by the symbol ".   
+            </li>
+            <li>Declination is measured in the same way, but comprises the vertical axis of the celestial coordinate system: it is the celestial equivalent to latitude.</li>
+        </ul>
+    </p>
+
+<h2 id="programming">Programming</h2>
+<p>The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> provides a lot of useful information in regards to software. You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
+</p>
+
+   <h3 class="indent1">Using Python</h3>
+<p class="indent1">
+The Rubin Science Platform will be sufficiently useful for most cases. However, if you ever need to work where there is a poor or insecure Internet connection, or you want to code on your own machine, you will need to install a distribution of Python.
+<ul class="indent2"> 
+    <li>Learning basic Python source</li>
+    <li>Anaconda Navigator 
+        <ul>
+            <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator">here.</a> </li>
+            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need.</blockquote>
+            </ul>
         </li>
-        <li>Declination is measured in the same way, but comprises the vertical axis of the celestial coordinate system: it is the celestial equivalent to latitude.</li>
+
+        <li>Jupyter Notebooks</li>
+            <ul>
+                <li>A Jupyter notebook is a type of file that holds code. This is the most commonly used type of code document in our field of astronomy. These are the files that will run in your browser when you use Anaconda, and that you will use if you are accessing the Rubin Science Platform and its associated data. </li>
+            </ul>
+        <ul>
+
+            <li>Common Python Packages – all three of these should come preinstalled on the Rubin Science Platform and on Anaconda Navigator. All you will need to do to use them is import them at the beginning of a notebook. </li>
+            <ul>
+                <li><a href="http://numpy.org/">NumPy</a> - used for better manipulation of numbers</li> 
+
+                <li><a href="https://www.astropy.org/">Astropy</a> - adds a lot of astronomy specific functionality</li> 
+
+                <li><a href="https://matplotlib.org/">Matplotlib</a> - make nice plots!</li>
+            </ul>
+
+        </ul>
+
     </ul>
-    </div>
+</ul>
+
+</p>
 
 <!-- p>The first letter in your bio is capitalised. Do not start the bio with a header or a blockquote block. This is how you <b>bold</b> text. Add in some <i>italics</i> for some pizazz. And of course, a <a href="URL" title="hover title">link</a> to your favourite pages. A scrollbar automatically appears if your bio gets too long.</p>
 
@@ -323,7 +361,7 @@ Each tag blog consists of a CATEGORY and the TAGS. Copy and paste the block belo
 </div><!--contentview--></div><!--content-->
 </div><!--main-->
 
-<a title="template is quartz page by xuethms" href="https://xuethms.tumblr.com"><div style="position:fixed;bottom:12px;right:12px;font-size:9px;letter-spacing:1px;background-color:#fff;color:#000;padding: 4px 7px;border-radius:5px;cursor:pointer;font-weight:1000">xue</div></a>
+<a title="based on quartz page by xuethms" href="https://xuethms.tumblr.com"><div style="position:fixed;bottom:12px;right:12px;font-size:9px;letter-spacing:1px;background-color:#fff;color:#000;padding: 4px 7px;border-radius:5px;cursor:pointer;font-weight:1000">xue</div></a>
 
 <!-- scripts and stuff ---------------------------->
 
