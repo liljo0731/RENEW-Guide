@@ -176,7 +176,6 @@ p:last-child { margin-bottom: 0; }
     border-radius: 100px;
 }
 
-
 /** text selection **/
 
 ::selection {
@@ -366,6 +365,42 @@ p:last-child { margin-bottom: 0; }
     border-radius: 10px;
     display: block;
 }
+/** replacing the image box with  a table of contents**/
+.abt-photoTB {
+    background-color: var(--abt-photoCB);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+    color: var(--BGcolour);
+
+}
+
+
+.abt-photoTB a {
+/*  font-size: 14px;*/
+  letter-spacing: 1px;
+  font-weight: 1000;
+  padding: 2px 2px;
+  border-radius: 4px;
+  margin: 0 2px 0 0;
+  scroll-margin-top:12px;
+  color:inherit;
+  text-decoration:underline;
+}
+
+
+.abt-photoTB h3.TC {
+    font-size: 1.2rem;
+    font-family: fredoka one;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left:.5em;
+    padding:10px;
+}
 
 .abt-pts {
     background-color: var(--contentBG);
@@ -400,6 +435,7 @@ p:last-child { margin-bottom: 0; }
     padding: 20px 20px 20px 20px;
     background-color: var(--contentBG);
     border-radius: 10px;
+    scroll-margin-top: 1rem;
 }
 
 .bio-graphy {
@@ -509,6 +545,7 @@ p:last-child { margin-bottom: 0; }
     margin: 20px 0 -5px 0;
 }
 
+
 .bio-graphy p.indent1, ul.indent1,h3.indent1 {
     display: inline-block;
     margin: .5rem .5em .5rem 3rem;
@@ -528,11 +565,9 @@ ul.b {
     list-style-type: circle;
 }
 
-ol {margin-left: -10px;}
+/*ol {margin-left: -10px;}*/
 li { margin-bottom: 5px; }
 
-li.indent1 {
-}
    
 /** =========================================================== TAGSLIST **/
 
