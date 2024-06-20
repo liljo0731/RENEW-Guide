@@ -448,14 +448,14 @@ p:last-child { margin-bottom: 0; }
     color: var(--txtcolour);
 }
 
-.bio-graphy:first-letter {
+/*.bio-graphy:first-letter {
     font-size: 40px;
     float: left;
     font-family: fredoka one;
     color: var(--abt-header);
     margin: 10px 6px 0 0;
     text-transform: uppercase;
-}
+}*/
 
 .bio-graphy blockquote {
     background-color: var(--abt-blockquote-BG);
@@ -554,6 +554,17 @@ p:last-child { margin-bottom: 0; }
 .bio-graphy p.indent2, ul.indent2,h3.indent2 {
     display: inline-block;
     margin: .25em .5em .5em 6em;
+}
+
+
+pre code {
+    font-size: 14 px;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+    border-radius: 2px;
+
 }
 
 ul.a {

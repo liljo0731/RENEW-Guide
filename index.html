@@ -85,7 +85,7 @@ Look out for my comments (greyed out text) like this.
             <h3 class="TC"><a href="">Table of Contents</a></h3>
             <ul style="font-size: 14px;">
                 <li><a href="#request">Requesting Data Access</a></li>
-                <li> <a href="Observatory">Rubin Observatory</a></li>
+                <li> <a href="#Observatory">Rubin Observatory</a></li>
                 <li><a href="#astronomy">Astronomy</a></li>
                 <ul>
                     <li><a href="#kilonova">What is a kilonova?</a></li>
@@ -93,7 +93,9 @@ Look out for my comments (greyed out text) like this.
                 </ul>
                 <li> <a href="#programming">Programming</a></li>
                 <ul>
-                    <li> <a href="#python">Using Python</a></li>
+                    <li><a href="#python">Using Python</a></li>
+                    <li><a href="#git">Version Control and Using Git</a></li>
+                    <li><a href="#terminal"> Using the terminal/command line</a></li>
                 </ul>
             </ul>
         </div>
@@ -204,11 +206,46 @@ The Rubin Science Platform will be sufficiently useful for most cases. However, 
             </ul>
 
         </ul>
-
     </ul>
+</p>
+    <h3 class="indent1" id="git"> Version Control and Using Git</h3>
+    <p class="indent1">Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
+        <ul class="indent2">
+            <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
+            <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial wher you can get hands-on practice with using GitHub without messing with any important files.</li>
+        </ul>
+        <p class="indent1">
+        When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
+    </p>
 </ul>
 
-</p>
+<h3 class="indent1" id="terminal">Using the terminal/command line </h3>
+<p class="indent1">
+        The terminal is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use the terminal to copy or delete files.
+        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the RSP it will be called a terminal. This will allow you to access what is known as the command line.
+        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
+    <ul class="indent2">
+            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
+            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+
+    </ul>
+        <p class="indent1">In order to work with the KDC, you will need to clone the repository to your machine. To do this, you will need to open the terminal and type:</p>
+        <blockquote style="margin-left:6rem;">
+            cd "folder name"
+        </blockquote> 
+        <p class="indent1">without the quotes, to enter the directory you want to copy the files to. Then type:</p>
+        <blockquote style="margin-left:6rem;">
+            git clone https://github.com/mpwiesner/KDC.git
+        </blockquote>
+
+        <p class="indent1">The KDC repository will be copied to your machine, where you can start working with the files.</p>
+<!--             <pre><code>
+cd
+                </code></pre> -->
+
+    <p class="indent1">For more specific use cases, Google and Stack Overflow will be your best friends.</p>
+
+
 
 <!-- p>The first letter in your bio is capitalised. Do not start the bio with a header or a blockquote block. This is how you <b>bold</b> text. Add in some <i>italics</i> for some pizazz. And of course, a <a href="URL" title="hover title">link</a> to your favourite pages. A scrollbar automatically appears if your bio gets too long.</p>
 
