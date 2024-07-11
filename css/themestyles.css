@@ -140,6 +140,8 @@ body {
     background-size: var(--BGwallpaper);
     background-attachment: fixed;
     font-family: var(--mainfont),sans-serif;
+    margin:0px;
+    width:90%;
 }
 
 a { text-decoration: none; }
@@ -245,7 +247,7 @@ p:last-child { margin-bottom: 0; }
 /** ========================================= HEADER / NAVIGATION BAR **/
 
 .header {
-    width: 100%;
+/*    width: 100%;*/
     height: 60px;
     background-color: var(--contentBG);
     overflow: hidden;
