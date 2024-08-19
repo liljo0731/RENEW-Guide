@@ -771,6 +771,18 @@ li { margin-bottom: 5px; }
 
 /** ============================================================ CONTACT **/
 
+em-frame {
+    font-size:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin: 0 2px 0 2px;
+    color: var(--abt-link-txt);
+    background-color: var(--abt-link-BG);
+}
+
 .qna-photo {
     background-image: var(--qna-photoURL);
     margin-right: 20px;
@@ -800,8 +812,8 @@ li { margin-bottom: 5px; }
 .qna-block:last-child { margin-bottom: 0; }
 
 .qna-qn {
-    line-height: 25px;
-    font-size: 13px;
+    line-height: 27px;
+    font-size: 14px;
     background-color: var(--contentBG);
     border-radius: 10px;
     padding: 10px 10px;
