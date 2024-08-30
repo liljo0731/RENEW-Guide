@@ -57,7 +57,7 @@
 
 /********************************************************* INTRO PAGE **/
     /** left photo **/ 
-    --abt-photoURL: url("https://images.unsplash.com/photo-1608914981193-a6bc79e8a909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    --abt-photoURL: url("https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg");
     --abt-photoCB: #ab1d31; /** color bar instead of photo **/
 
     /** basic info intro (below photo) **/
@@ -332,7 +332,7 @@ p:last-child { margin-bottom: 0; }
 
 .allviews {
     transition: 0.6s ease-in-out;
-    width: 300%;
+    width: 400%;
     height:100%;
     overflow-y: auto;
     overflow: hidden;
@@ -340,7 +340,7 @@ p:last-child { margin-bottom: 0; }
 
 .view {
     float: left;
-    width: 33.33%;
+    width: 25%;
     height: 100%;
     overflow: hidden;
 }
@@ -353,15 +353,15 @@ p:last-child { margin-bottom: 0; }
 }
 
 .abt-basic {
-    width: 30%;
+    width: 22.5%;
     height: 100%;
     float: left;
     margin-right: 20px;
 }
 
 .abt-photo {
-/*    background-image: var(--abt-photoURL);*/
-    background-color: var(--abt-photoCB);
+    background-image: var(--abt-photoURL);
+/*    background-color: var(--abt-photoCB);*/
     background-size: cover;
     background-position: center;
     height: 100%;

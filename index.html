@@ -64,10 +64,10 @@ Look out for my comments (greyed out text) like this.
     <div class="header-nav">
     <!-- header navigation buttons -->
     <!-- you can edit the titles of the sections below -->
-    <div class="hbtn hbtn-one hbtn-active">   Guide         </div>
-    <div class="hbtn hbtn-two">               Contact          </div>
-    <!-- <div class="hbtn hbtn-three">             following     </div> -->
-    <!-- <div class="hbtn hbtn-three">              tags       </div> -->
+    <div class="hbtn hbtn-one hbtn-active" id=home>   Home        </div>
+    <div class="hbtn hbtn-two" id=cosmology>               Cosmology         </div>
+    <div class="hbtn hbtn-three" id=PROGRAMS>             Programming     </div>
+    <div class="hbtn hbtn-four" id=contact>              Contact       </div>
     <!-- <div class="hbtn hbtn-four">              contact       </div> -->
     </div>
     
@@ -76,29 +76,31 @@ Look out for my comments (greyed out text) like this.
 
 <div class="content"><div class="allviews">
     
-<div class="view"><!-- about me intro panel -------------------------------->
+
+
+<div class="view"><!-- HOME panel -->
 <div class="abt-layout">
 
     <div class="abt-basic">
         <!-- table of contents -->
         <div class="abt-photoTB">
-            <h3 class="TC"><a href="">Table of Contents</a></h3>
+            <h3 class="TC"><a href="#home">Table of Contents</a></h3>
             <ul style="font-size: 14px; padding-right:20 px">
                 <li><a href="#request">Requesting Data Access</a></li>
                 <li> <a href="#Observatory">Rubin Observatory</a></li>
-                <li><a href="#astronomy">Astronomy</a></li>
+          <!--       <li><a href="#astronomy">Astronomy</a></li>
                 <ul>
                     <li><a href="#kilonova">What is a kilonova?</a></li>
                     <li><a href="#radec">Right Ascension and Declination</a></li>
                 </ul>
-                <li> <a href="#programming">Programming</a></li>
+ -->                <li> <a href="#programming">Programming</a></li>
                 <ul>
                     <li><a href="#python">Using Python</a></li>
                     <li><a href="#git">Version Control and Using Git</a></li>
                     <li><a href="#terminal"> Using the terminal/command line</a></li>
                 </ul>
             </ul>
-            <div style="text-align: center; font-size: 20px;"><a href="#quiz">Skills Test</a></div>
+            <!-- <div style="text-align: center; font-size: 20px;"><a href="#quiz">Skills Test</a></div> -->
         </div>
         <!-- <div class="abt-photo"></div> -->
 
@@ -149,7 +151,7 @@ Look out for my comments (greyed out text) like this.
         <li><a href="https://www.youtube.com/watch?v=h6QYjNjivDE"> What is the Rubin Observatory?</a></li>
     </ol>
 
-<h2 id="astronomy">Astronomy</h2>
+<!-- <h2 id="astronomy">Astronomy</h2>
 <p>There are some important pieces of astronomy knowledge you will need to know in order to proceed with your project. This list will get you started with some items you will need to understand. If there are things in the articles or explanations that don't make sense, dive deeper into the terminology you don't understand and do some research on your own. Feel free to also ask your advisors for help if there is something you get stuck on.</p>
 
 <h3 class="indent1" id="kilonova">What is a kilonova?</h3> 
@@ -173,87 +175,15 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
             </li>
             <li>Declination is measured in the same way, but comprises the vertical axis of the celestial coordinate system: it is the celestial equivalent to latitude.</li>
         </ul>
-    </p>
+    </p> -->
 
-<h2 id="programming">Programming</h2>
-<p>The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> provides a lot of useful information in regards to software. You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
-</p>
 
-   <h3 class="indent1" id="python">Using Python</h3>
-<p class="indent1">
-The Rubin Science Platform will be sufficiently useful for most cases. However, if you ever need to work where there is a poor or insecure Internet connection, or you want to code on your own machine, you will need to install a distribution of Python.
-<ul class="indent2"> 
-    <li>If you are completely new to Python, <a href="https://www.learnpython.org/"> this website</a> has many tutorials that will guide you through the basics. You should work through all the pages listed under the "Learn the Basics" and "Data Science Tutorials" categories.</li>
-    <li>Anaconda Navigator 
-        <ul>
-            <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator">here.</a> </li>
-            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need.</blockquote>
-            </ul>
-        </li>
-
-        <li>Jupyter Notebooks</li>
-            <ul>
-                <li>A Jupyter notebook is a type of file that holds code. This is the most commonly used type of code document in our field of astronomy. These are the files that will run in your browser when you use Anaconda, and that you will use if you are accessing the Rubin Science Platform and its associated data. </li>
-            </ul>
-        <ul>
-
-            <li>Common Python Packages – all of these should come preinstalled on the Rubin Science Platform and on Anaconda Navigator. All you will need to do to use them is import them at the beginning of a notebook. </li>
-            <ul>
-                <li><a href="http://numpy.org/">NumPy</a> - used for better manipulation of numbers</li> 
-
-                <li><a href="https://www.astropy.org/">Astropy</a> - adds a lot of astronomy specific functionality</li> 
-
-                <li><a href="https://matplotlib.org/">Matplotlib</a> - make nice plots!</li>
-                <li> <a href="https://pandas.pydata.org/">Pandas</a> - used for interfacing with Excel files and organizing 2-dimensional data sets.</li>
-            </ul>
-
-        </ul>
-    </ul>
-</p>
-    <h3 class="indent1" id="git"> Version Control and Using Git</h3>
-    <p class="indent1">Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
-        <ul class="indent2">
-            <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
-            <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
-        </ul>
-        <p class="indent1">
-        When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
-    </p>
-</ul>
-
-<h3 class="indent1" id="terminal">Using the terminal/command line </h3>
-<p class="indent1">
-        The terminal is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use the terminal to copy or delete files.
-        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the RSP it will be called a terminal. This will allow you to access what is known as the command line.
-        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
-    <ul class="indent2">
-            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
-            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
-
-    </ul>
-        <p class="indent1">In order to work with the KDC, you will need to clone the repository to your machine. To do this, you will need to open the terminal and type:</p>
-        <blockquote style="margin-left:6rem;">
-            <code>
-            cd "folder name"
-            </code>
-        </blockquote> 
-        <p class="indent1">without the quotes, to enter the directory you want to copy the files to. Then type:</p>
-        <blockquote style="margin-left:6rem;">
-            <code>
-            git clone https://github.com/mpwiesner/KDC.git
-            </code>
-        </blockquote>
-
-        <p class="indent1">The KDC repository will be copied to your machine, where you can start working with the files.</p>
-
-    <p class="indent1">For more specific use cases, Google and Stack Overflow will be your best friends.</p>
-
-<h2 class="indent1" id="quiz">
+<!-- <h2 class="indent1" id="quiz">
     Skills Test
 </h2>
 <br>
 
-<iframe width="100%" height="100%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=gRH0uhBKDU-8xiSs06vky2vjMwh4F95IlBxe_0lnf0BUQkM5UlgzMTg0SFNLWDE3VVdBVzlOVEhQTy4u&embed=true" frameborder="200" marginwidth="20px" marginheight="40px" style="border: medium; max-width:100%;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+<iframe width="100%" height="100%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=gRH0uhBKDU-8xiSs06vky2vjMwh4F95IlBxe_0lnf0BUQkM5UlgzMTg0SFNLWDE3VVdBVzlOVEhQTy4u&embed=true" frameborder="200" marginwidth="20px" marginheight="40px" style="border: medium; max-width:100%;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
 
 <!-- p>The first letter in your bio is capitalised. Do not start the bio with a header or a blockquote block. This is how you <b>bold</b> text. Add in some <i>italics</i> for some pizazz. And of course, a <a href="URL" title="hover title">link</a> to your favourite pages. A scrollbar automatically appears if your bio gets too long.</p>
 
@@ -310,8 +240,149 @@ The Rubin Science Platform will be sufficiently useful for most cases. However, 
         
     </div><!--abt-bio-->
 </div><!--abt-layout-->
-</div><!-- end of INTRO panel -->
+</div><!--end of HOME panel -->
+
+<div class="view"><!-- start of COSMOLOGY panel -->
+    <div class="abt-layout">
+        <div class="abt-basic">
+            <!-- table of contents -->
+            <div class="abt-photoTB">
+                <h3 class="TC"><a href="#PROGRAMS">Table of Contents</a></h3>
+            </div><!-- abt-photoTB -->
+            <div class="abt-pts">
+            </div><!--abt-pts-->
+            <div class="abt-bio">
+                <div class="bio-graphy">
+
+                </div><!-- bio-graphy -->
+            </div><!-- abt-bio -->
+        </div><!--abt-basic-->
+    </div><!-- abt-layout -->
+</div><!-- end of COSMOLOGY panel -->
+
+<div class="view"><!-- start of PROGRAMMING panel -->
+    <div class="abt-layout">
+        <div class="abt-basic">
+            <!-- table of contents -->
+            <div class="abt-photoTB">
+            </div><!-- abt-photoTB -->
+            <div class="abt-pts">
+            </div><!--abt-pts-->
+        </div><!--abt-basic-->
+        <div class="abt-bio">
+            <div class="bio-graphy">
+                <h1 id="programming">Programming</h1>
+                <p>The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> provides a lot of useful information in regards to software. You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
+                </p>
+
+                   <h3 class="indent1" id="python">Using Python</h3>
+                <p class="indent1">
+                The Rubin Science Platform will be sufficiently useful for most cases. However, if you ever need to work where there is a poor or insecure Internet connection, or you want to code on your own machine, you will need to install a distribution of Python.
+                <ul class="indent2"> 
+                    <li>If you are completely new to Python, <a href="https://www.learnpython.org/"> this website</a> has many tutorials that will guide you through the basics. You should work through all the pages listed under the "Learn the Basics" and "Data Science Tutorials" categories.</li>
+                    <li>Anaconda Navigator 
+                        <ul>
+                            <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator">here.</a> </li>
+                            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need.</blockquote>
+                            </ul>
+                        </li>
+
+                        <li>Jupyter Notebooks</li>
+                            <ul>
+                                <li>A Jupyter notebook is a type of file that holds code. This is the most commonly used type of code document in our field of astronomy. These are the files that will run in your browser when you use Anaconda, and that you will use if you are accessing the Rubin Science Platform and its associated data. </li>
+                            </ul>
+                        <ul>
+
+                            <li>Common Python Packages – all of these should come preinstalled on the Rubin Science Platform and on Anaconda Navigator. All you will need to do to use them is import them at the beginning of a notebook. </li>
+                            <ul>
+                                <li><a href="http://numpy.org/">NumPy</a> - used for better manipulation of numbers</li> 
+
+                                <li><a href="https://www.astropy.org/">Astropy</a> - adds a lot of astronomy specific functionality</li> 
+
+                                <li><a href="https://matplotlib.org/">Matplotlib</a> - make nice plots!</li>
+                                <li> <a href="https://pandas.pydata.org/">Pandas</a> - used for interfacing with Excel files and organizing 2-dimensional data sets.</li>
+                            </ul>
+
+                        </ul>
+                    </ul>
+                </p>
+                    <h3 class="indent1" id="git"> Version Control and Using Git</h3>
+                    <p class="indent1">Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
+                        <ul class="indent2">
+                            <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
+                            <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
+                        </ul>
+                        <p class="indent1">
+                        When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
+                    </p>
+                </ul>
+
+                <h3 class="indent1" id="terminal">Using the terminal/command line </h3>
+                <p class="indent1">
+                        The terminal is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use the terminal to copy or delete files.
+                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the RSP it will be called a terminal. This will allow you to access what is known as the command line.
+                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
+                    <ul class="indent2">
+                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
+                            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+
+                    </ul>
+                        <p class="indent1">In order to work with the KDC, you will need to clone the repository to your machine. To do this, you will need to open the terminal and type:</p>
+                        <blockquote style="margin-left:6rem;">
+                            <code>
+                            cd "folder name"
+                            </code>
+                        </blockquote> 
+                        <p class="indent1">without the quotes, to enter the directory you want to copy the files to. Then type:</p>
+                        <blockquote style="margin-left:6rem;">
+                            <code>
+                            git clone https://github.com/mpwiesner/KDC.git
+                            </code>
+                        </blockquote>
+
+                        <p class="indent1">The KDC repository will be copied to your machine, where you can start working with the files.</p>
+
+                    <p class="indent1">For more specific use cases, Google and Stack Overflow will be your best friends.</p>
+            </div><!-- bio-graphy -->
+        </div><!-- abt-bio -->
+    </div><!-- abt-layout -->
+</div><!-- end of PROGRAMMING panel -->
+
+<div class="view"><!-- contact panel --------------------------------------->
     
+    <div class="view-photo qna-photo"></div>
+    <div class="qna-content">
+    
+    <!-- QNA SECTION ----------------------------------------------------->
+    <!-- You can add as many QNA blocks as you would like. Basic template:
+    
+    <div class="qna-block">
+        <div class="qna-qn">The question?</div>
+        <div class="qna-ans">The answer.</div>
+    </div>
+    
+    -->
+    
+    <div class="qna-block">
+        <div class="qna-qn">Click here if you have questions.</div>
+        <div class="qna-ans">
+            <p>Feel free to contact us! </p>
+            <p>For questions about the site/content, contact Lilly Joseph at <em-frame>ljos<!-- abc@def -->eph@be<!-- @abc.com -->n.edu.</em-frame></p>
+
+            <p>For questions about RENEW at Benedictine and how you can join, please contact Dr. Matthew Wiesner at <em-frame>mwies<!-- abc@def -->ner@be<!-- @abc.com -->n.edu.</em-frame></p>
+            </div>
+    </div>
+    
+<!--     
+    <div class="qna-block">
+        <div class="qna-qn">The question?</div>
+        <div class="qna-ans">The answer.</div>
+    </div>
+     -->
+
+     </div><!--qna-content-->
+    
+</div><!-- end of CONTACT panel -->
 
 <!-- <div class="view"><-- tags list panel ------------------------------------->
     <!-- <div class="view-photo tag-photo"></div> -->
@@ -359,60 +430,7 @@ Each tag blog consists of a CATEGORY and the TAGS. Copy and paste the block belo
 <!-- </div><-- end of TAGSLIST panel-->
 
 
-<div class="view"><!-- contact panel --------------------------------------->
-    
-    <div class="view-photo qna-photo"></div>
-    <div class="qna-content">
-    
-    <!-- QNA SECTION ----------------------------------------------------->
-    <!-- You can add as many QNA blocks as you would like. Basic template:
-    
-    <div class="qna-block">
-        <div class="qna-qn">The question?</div>
-        <div class="qna-ans">The answer.</div>
-    </div>
-    
-    -->
-    
-    <div class="qna-block">
-        <div class="qna-qn">Click here if you have questions.</div>
-        <div class="qna-ans">
-            <p>Feel free to contact us! </p>
-            <p>For questions about the site/content, contact Lilly Joseph at <em-frame>ljos<!-- abc@def -->eph@be<!-- @abc.com -->n.edu.</em-frame></p>
 
-            <p>For questions about RENEW at Benedictine and how you can join, please contact Dr. Matthew Wiesner at <em-frame>mwies<!-- abc@def -->ner@be<!-- @abc.com -->n.edu.</em-frame></p>
-            </div>
-    </div>
-    
-<!--     
-    <div class="qna-block">
-        <div class="qna-qn">The question?</div>
-        <div class="qna-ans">The answer.</div>
-    </div>
-     -->
-    
-    
-    <!-- ASKING GUIDELINES -----------------------------------------------
-         You can delete this entire block if you do not want to have
-         asking guidelines. -->
-    <!-- <div class="qna-notice">
-        <div class="qna-notice-title">Asking Guidelines</div>
-        Before you message, please take note of the following:
-        <ul>
-            <li>Notice item one</li>
-            <li>Notice item two</li>
-        </ul> -->
-    <!-- </div><--end of qna notice--> 
-    
-    
-    <!-- [BITTERN] VERY IMPT: Getting the ask box to work!
-         REPLACE =====URL===== BELOW WITH YOUR USERNAME.
-         e.g, I'd replace it with "xuethms" -->
-    <!-- <iframe frameborder="0" scrolling="no" width="100%" height="190" src="https://www.tumblr.com/ask_form/=====URL=====.tumblr.com" style="background-color:transparent; overflow:hidden;" id="ask_form"></iframe> -->
-    
-     </div><!--qna-content-->
-    
-</div><!-- end of CONTACT panel -->
 
 
 <!-- ============================ T H E   E N D ============================
