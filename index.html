@@ -65,8 +65,8 @@ Look out for my comments (greyed out text) like this.
     <!-- header navigation buttons -->
     <!-- you can edit the titles of the sections below -->
     <div class="hbtn hbtn-one hbtn-active" id=home>   Home        </div>
-    <div class="hbtn hbtn-two" id=cosmology>               Cosmology         </div>
-    <div class="hbtn hbtn-three" id=PROGRAMS>             Programming     </div>
+    <div class="hbtn hbtn-two" id=programming>               Programming        </div>
+    <div class="hbtn hbtn-three" id=cosmology>             Cosmology    </div>
     <div class="hbtn hbtn-four" id=contact>              Contact       </div>
     <!-- <div class="hbtn hbtn-four">              contact       </div> -->
     </div>
@@ -86,9 +86,12 @@ Look out for my comments (greyed out text) like this.
         <div class="abt-photoTB">
             <h3 class="TC"><a href="#home">Table of Contents</a></h3>
             <ul style="font-size: 14px; padding-right:20 px">
-                <li><a href="#member">Becoming a DESC Member</a></li>
-                <li><a href="#request">Requesting Data Access</a></li>
                 <li> <a href="#Observatory">Rubin Observatory</a></li>
+                <li><a href="#member">Becoming a DESC Member</a></li>
+                <ul>
+                    <li><a href="#request">Requesting Data Access</a></li>
+                </ul>
+                
           <!--       <li><a href="#astronomy">Astronomy</a></li>
                 <ul>
                     <li><a href="#kilonova">What is a kilonova?</a></li>
@@ -248,38 +251,19 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
 </div><!--abt-layout-->
 </div><!--end of HOME panel -->
 
-<div class="view"><!-- start of COSMOLOGY panel -->
-    <div class="abt-layout">
-        <div class="abt-basic">
-            <!-- table of contents -->
-            <div class="abt-photoTB">
-                <h3 class="TC"><a href="#cosmology">Table of Contents</a></h3>
-                <ul style="font-size: 14px; padding-right:20 px">
-                    <li></li>
-                </ul>
-            </div><!-- abt-photoTB -->
-            <div class="abt-pts">
-            </div><!--abt-pts-->
-            <div class="abt-bio">
-                <div class="bio-graphy">
-
-                </div><!-- bio-graphy -->
-            </div><!-- abt-bio -->
-        </div><!--abt-basic-->
-    </div><!-- abt-layout -->
-</div><!-- end of COSMOLOGY panel -->
 
 <div class="view"><!-- start of PROGRAMMING panel -->
     <div class="abt-layout">
         <div class="abt-basic">
             <!-- table of contents -->
             <div class="abt-photoTB">
-                <h3 class="TC"><a href="#PROGRAMS">Table of Contents</a></h3>
-                <ul style="font-size: 14px; padding-right:20 px">            
+                <h3 class="TC"><a href="#programming">Table of Contents</a></h3>
+                <ul style="font-size: 14px; padding-right:20 px">  
+                    <li><a href="#terminal"> Using the terminal/command line</a></li>           
                     <li><a href="#python">Using Python</a></li>
                     <li><a href="#git">Version Control and Using Git</a></li>
-                    <li><a href="#terminal"> Using the terminal/command line</a></li>                
-            </ul>
+                                   
+                </ul>
             </div><!-- abt-photoTB -->
             <div class="abt-pts">
             </div><!--abt-pts-->
@@ -287,13 +271,34 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
         <div class="abt-bio">
             <div class="bio-graphy">
                 <h2 id="programming">Programming</h2>
-                <p>The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> provides a lot of useful information in regards to software. You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
+                <p style="margin-bottom: .5rem;">
+                    There are 4 main programming languages/softwares that you will need to become familiar with in order to be successful in this lab:
+                    <ul style="margin: 0px;">
+                        <li style="margin-bottom: .25rem;">Shell</li>
+                        <li style="margin-bottom: .25rem;">Python,</li>
+                        <li style="margin-bottom: .25rem;">SQL, and</li>
+                        <li style="margin-bottom: .25rem;">Git</li>
+                    </ul>
                 </p>
+                <p> If you are not familiar with any of these, that's okay. There are lessons for each of the mentioned topics available at <a href="https://software-carpentry.org/lessons/">Software Carpentry</a>, a site developed specifically to help students learn the skills neecessary for successful research computing.</p>
+                <p style="margin: 0px">The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> also provides a lot of useful information in regards to software.</p><!--  You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
+                </p> -->
 
-                   <h3 class="indent1" id="python">Using Python</h3>
-                <p class="indent1">
+                <h3 id="terminal">Using the terminal/shell </h3>
+                <p>
+                        The shell is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use it to copy or delete files.
+                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the Rubin Science Platform it will be called a terminal. 
+                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
+                    <ul class="indent1">
+                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
+                            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+
+                    </ul>
+
+                <h3  id="python">Using Python</h3>
+                <p>
                 The Rubin Science Platform will be sufficiently useful for most cases. However, if you ever need to work where there is a poor or insecure Internet connection, or you want to code on your own machine, you will need to install a distribution of Python.
-                <ul class="indent2"> 
+                <ul> 
                     <li>If you are completely new to Python, <a href="https://www.learnpython.org/"> this website</a> has many tutorials that will guide you through the basics. You should work through all the pages listed under the "Learn the Basics" and "Data Science Tutorials" categories.</li>
                     <li>Anaconda Navigator 
                         <ul>
@@ -321,28 +326,18 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                         </ul>
                     </ul>
                 </p>
-                    <h3 class="indent1" id="git"> Version Control and Using Git</h3>
-                    <p class="indent1">Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
-                        <ul class="indent2">
-                            <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
-                            <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
-                        </ul>
-                        <p class="indent1">
+                <h3 id="git"> Version Control and Using Git</h3>
+                <p>Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
+                    <ul class="indent1">
+                        <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
+                        <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
+                    </ul>
+                        <!-- <p class="indent1">
                         When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
-                    </p>
+                    </p> -->
                 </ul>
 
-                <h3 class="indent1" id="terminal">Using the terminal/command line </h3>
-                <p class="indent1">
-                        The terminal is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use the terminal to copy or delete files.
-                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the RSP it will be called a terminal. This will allow you to access what is known as the command line.
-                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
-                    <ul class="indent2">
-                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
-                            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
-
-                    </ul>
-                        <p class="indent1">In order to work with the KDC, you will need to clone the repository to your machine. To do this, you will need to open the terminal and type:</p>
+                        <!-- <p class="indent1">In order to work with the KDC, you will need to clone the repository to your machine. To do this, you will need to open the terminal and type:</p>
                         <blockquote style="margin-left:6rem;">
                             <code>
                             cd "folder name"
@@ -355,13 +350,34 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                             </code>
                         </blockquote>
 
-                        <p class="indent1">The KDC repository will be copied to your machine, where you can start working with the files.</p>
+                        <p class="indent1">The KDC repository will be copied to your machine, where you can start working with the files.</p> -->
 
                     <p class="indent1">For more specific use cases, Google and Stack Overflow will be your best friends.</p>
             </div><!-- bio-graphy -->
         </div><!-- abt-bio -->
     </div><!-- abt-layout -->
 </div><!-- end of PROGRAMMING panel -->
+
+<div class="view"><!-- start of COSMOLOGY panel -->
+    <div class="abt-layout">
+        <div class="abt-basic">
+            <!-- table of contents -->
+            <div class="abt-photoTB">
+                <h3 class="TC"><a href="#cosmology">Table of Contents</a></h3>
+                <ul style="font-size: 14px; padding-right:20 px">
+                    <li></li>
+                </ul>
+            </div><!-- abt-photoTB -->
+            <div class="abt-pts">
+            </div><!--abt-pts-->
+            <div class="abt-bio">
+                <div class="bio-graphy">
+
+                </div><!-- bio-graphy -->
+            </div><!-- abt-bio -->
+        </div><!--abt-basic-->
+    </div><!-- abt-layout -->
+</div><!-- end of COSMOLOGY panel -->
 
 <div class="view"><!-- contact panel --------------------------------------->
     
