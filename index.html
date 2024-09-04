@@ -143,8 +143,8 @@ Look out for my comments (greyed out text) like this.
 <h2 id="Observatory">Rubin Observatory</h2>
  <p>What is the Rubin Observatory? To get a brief overview, watch these two videos:
     <ol>
-        <li><a href="https://www.youtube.com/watch?v=wd2hL3yI_-E">Who was Vera Rubin?</a></li>
-        <li><a href="https://www.youtube.com/watch?v=h6QYjNjivDE"> What is the Rubin Observatory?</a></li>
+        <li><a href="https://www.youtube.com/watch?v=wd2hL3yI_-E" target="_blank" rel="noopener noreferrer">Who was Vera Rubin?</a></li>
+        <li><a href="https://www.youtube.com/watch?v=h6QYjNjivDE" target="_blank" rel="noopener noreferrer"> What is the Rubin Observatory?</a></li>
     </ol>
 <h2 id="member"> Becoming a DESC member</h2>
 <p>
@@ -153,9 +153,9 @@ Look out for my comments (greyed out text) like this.
 <h3 class="indent1" id="request">Requesting Data Access </h3>
 
 <p class="indent1">
-<a href="https://rsp.lsst.io/guides/getting-started/get-an-account.html" title="Rubin Science Platform">The Rubin Science Platform (RSP)</a> is a powerful computing platform that hosts simulated data very similar to what LSST will produce. We will discuss more about LSST and Rubin later, but first request access to the RSP, as you will need it for the duration of the program.
+<a href="https://rsp.lsst.io/guides/getting-started/get-an-account.html" title="Rubin Science Platform" target="_blank" rel="noopener noreferrer">The Rubin Science Platform (RSP)</a> is a powerful computing platform that hosts simulated data very similar to what LSST will produce. We will discuss more about LSST and Rubin later, but first request access to the RSP, as you will need it for the duration of the program.
 <br>
-<a href="http://community.lsst.org" title="Rubin Community Forums">Rubin Community Forums</a>: After you gain access to the RSP, if you have any questions for how to select certain types of data or manipulate it in a specific way, you can check here to see if someone has already done that, or you can post a question yourself. You may also check with Dr. Wiesner to see if he is familiar with what you are trying to do.
+<a href="http://community.lsst.org" title="Rubin Community Forums" target="_blank" rel="noopener noreferrer">Rubin Community Forums</a>: After you gain access to the RSP, if you have any questions for how to select certain types of data or manipulate it in a specific way, you can check here to see if someone has already done that, or you can post a question yourself. You may also check with Dr. Wiesner to see if he is familiar with what you are trying to do.
  </p>
 
  
@@ -258,9 +258,9 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
             <!-- table of contents -->
             <div class="abt-photoTB">
                 <h3 class="TC"><a href="#programming">Table of Contents</a></h3>
-                <ul style="font-size: 14px; padding-right:20 px">  
-                    <li><a href="#terminal"> Using the terminal/command line</a></li>           
+                <ul style="font-size: 14px; padding-right:20 px">        
                     <li><a href="#python">Using Python</a></li>
+                    <li><a href="#terminal"> Using the terminal/command line</a></li>     
                     <li><a href="#git">Version Control and Using Git</a></li>
                                    
                 </ul>
@@ -274,36 +274,25 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                 <p style="margin-bottom: .5rem;">
                     There are 4 main programming languages/softwares that you will need to become familiar with in order to be successful in this lab:
                     <ul style="margin: 0px;">
-                        <li style="margin-bottom: .25rem;">Shell</li>
                         <li style="margin-bottom: .25rem;">Python,</li>
+                        <li style="margin-bottom: .25rem;">Shell,</li>
                         <li style="margin-bottom: .25rem;">SQL, and</li>
                         <li style="margin-bottom: .25rem;">Git</li>
                     </ul>
                 </p>
-                <p> If you are not familiar with any of these, that's okay. There are lessons for each of the mentioned topics available at <a href="https://software-carpentry.org/lessons/">Software Carpentry</a>, a site developed specifically to help students learn the skills neecessary for successful research computing.</p>
-                <p style="margin: 0px">The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/"> Astrobites Guide to Astrophysical Software</a> also provides a lot of useful information in regards to software.</p><!--  You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
+                <p> If you are not familiar with any of these, that's okay. There are lessons for each of the mentioned topics available at <a href="https://software-carpentry.org/lessons/" target="_blank" rel="noopener noreferrer">Software Carpentry</a>, a site developed specifically to help students learn the skills neecessary for successful research computing.</p>
+                <p style="margin: 0px">The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/" target="_blank" rel="noopener noreferrer"> Astrobites Guide to Astrophysical Software</a> also provides a lot of useful information in regards to software.</p><!--  You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
                 </p> -->
-
-                <h3 id="terminal">Using the terminal/shell </h3>
-                <p>
-                        The shell is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use it to copy or delete files.
-                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the Rubin Science Platform it will be called a terminal. 
-                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
-                    <ul class="indent1">
-                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
-                            <li> <a href="https://explainshell.com/">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
-
-                    </ul>
 
                 <h3  id="python">Using Python</h3>
                 <p>
                 The Rubin Science Platform will be sufficiently useful for most cases. However, if you ever need to work where there is a poor or insecure Internet connection, or you want to code on your own machine, you will need to install a distribution of Python.
                 <ul> 
-                    <li>If you are completely new to Python, <a href="https://www.learnpython.org/"> this website</a> has many tutorials that will guide you through the basics. You should work through all the pages listed under the "Learn the Basics" and "Data Science Tutorials" categories.</li>
+                    <li>If you are completely new to Python, go through the <a href="https://swcarpentry.github.io/python-novice-inflammation/index.html" target="_blank" rel="noopener noreferrer"> Software Carpentry "Programming with Python" lesson.</a> It will prompt you to install Anaconda Navigator.</li>
                     <li>Anaconda Navigator 
                         <ul>
-                            <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator">here.</a> </li>
-                            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need.</blockquote>
+                            <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator" target="_blank" rel="noopener noreferrer">here.</a> </li>
+                            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need. However, when working with large datasets, it may be preferable to use the computers in the Remote Observing Station, as they have more computing power.</blockquote>
                             </ul>
                         </li>
 
@@ -313,24 +302,39 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                             </ul>
                         <ul>
 
-                            <li>Common Python Packages – all of these should come preinstalled on the Rubin Science Platform and on Anaconda Navigator. All you will need to do to use them is import them at the beginning of a notebook. </li>
+                            <li>Common Python Packages – A package is a set of predefined functions that are well-documented and ready to use. All of the below should come preinstalled on the Rubin Science Platform and on Anaconda Navigator. All you will need to do to use them is import them at the beginning of a notebook. </li>
                             <ul>
-                                <li><a href="http://numpy.org/">NumPy</a> - used for better manipulation of numbers</li> 
+                                <li><a href="http://numpy.org/" target="_blank" rel="noopener noreferrer">NumPy</a> - used for better manipulation of numbers</li> 
 
-                                <li><a href="https://www.astropy.org/">Astropy</a> - adds a lot of astronomy specific functionality</li> 
+                                <li><a href="https://www.astropy.org/" target="_blank" rel="noopener noreferrer">Astropy</a> - adds a lot of astronomy specific functionality</li> 
 
-                                <li><a href="https://matplotlib.org/">Matplotlib</a> - make nice plots!</li>
-                                <li> <a href="https://pandas.pydata.org/">Pandas</a> - used for interfacing with Excel files and organizing 2-dimensional data sets.</li>
+                                <li><a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer">Matplotlib</a> - make nice plots!</li>
+                                <li> <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer">Pandas</a> - used for interfacing with Excel files and organizing 2-dimensional data sets.</li>
                             </ul>
 
                         </ul>
                     </ul>
                 </p>
+
+                <h3 id="terminal">Using the terminal/shell </h3>
+                <p>
+                        The shell is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use it to copy or delete files.
+                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the Rubin Science Platform it will be called a terminal. 
+                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
+                        <p>It is quite likely that you will rarely need to use the shell. It is still useful to become familiar with it, as it can make moving, copying, and renaming large batches of files much easier and faster.
+                            An in-depth tutorial is available at <a href="https://swcarpentry.github.io/shell-novice/" target="_blank" rel="noopener noreferrer"> Software Carpentry's "The Unix Shell" lesson.</a> Briefer overviews are available at the liks below.</p>
+                    <ul class="indent1">
+                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php" target="_blank" rel="noopener noreferrer">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
+                            <li> <a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+
+                    </ul>
+
+                
                 <h3 id="git"> Version Control and Using Git</h3>
                 <p>Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
                     <ul class="indent1">
-                        <li><a href="https://astrobites.org/2023/09/29/git-started/"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
-                        <li><a href="https://learngitbranching.js.org/?locale=en_US">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
+                        <li><a href="https://astrobites.org/2023/09/29/git-started/" target="_blank" rel="noopener noreferrer"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
+                        <li><a href="https://learngitbranching.js.org/?locale=en_US" target="_blank" rel="noopener noreferrer">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
                     </ul>
                         <!-- <p class="indent1">
                         When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
