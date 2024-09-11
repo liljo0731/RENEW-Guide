@@ -85,7 +85,7 @@ Look out for my comments (greyed out text) like this.
         <!-- table of contents -->
         <div class="abt-photoTB">
             <h3 class="TC"><a href="#home">Table of Contents</a></h3>
-            <ul style="font-size: 14px; padding-right:20 px">
+            <ul style="font-size: 14px; padding-right:20px">
                 <li> <a href="#Observatory">Rubin Observatory</a></li>
                 <li><a href="#member">Becoming a DESC Member</a></li>
                 <ul>
@@ -157,9 +157,6 @@ Look out for my comments (greyed out text) like this.
 <br>
 <a href="http://community.lsst.org" title="Rubin Community Forums" target="_blank" rel="noopener noreferrer">Rubin Community Forums</a>: After you gain access to the RSP, if you have any questions for how to select certain types of data or manipulate it in a specific way, you can check here to see if someone has already done that, or you can post a question yourself. You may also check with Dr. Wiesner to see if he is familiar with what you are trying to do.
  </p>
-
- 
-
 <!-- <h2 id="astronomy">Astronomy</h2>
 <p>There are some important pieces of astronomy knowledge you will need to know in order to proceed with your project. This list will get you started with some items you will need to understand. If there are things in the articles or explanations that don't make sense, dive deeper into the terminology you don't understand and do some research on your own. Feel free to also ask your advisors for help if there is something you get stuck on.</p>
 
@@ -258,9 +255,10 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
             <!-- table of contents -->
             <div class="abt-photoTB">
                 <h3 class="TC"><a href="#programming">Table of Contents</a></h3>
-                <ul style="font-size: 14px; padding-right:20 px">        
+                <ul style="font-size: 14px; padding-right:20px"> 
+                <li><a href="#terminal"> Using the terminal/command line</a></li>        
                     <li><a href="#python">Using Python</a></li>
-                    <li><a href="#terminal"> Using the terminal/command line</a></li>     
+                    <li><a href="#SQL">Using SQL</a></li>
                     <li><a href="#git">Version Control and Using Git</a></li>
                                    
                 </ul>
@@ -274,8 +272,8 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                 <p style="margin-bottom: .5rem;">
                     There are 4 main programming languages/softwares that you will need to become familiar with in order to be successful in this lab:
                     <ul style="margin: 0px;">
-                        <li style="margin-bottom: .25rem;">Python,</li>
                         <li style="margin-bottom: .25rem;">Shell,</li>
+                        <li style="margin-bottom: .25rem;">Python,</li>
                         <li style="margin-bottom: .25rem;">SQL, and</li>
                         <li style="margin-bottom: .25rem;">Git</li>
                     </ul>
@@ -283,6 +281,20 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                 <p> If you are not familiar with any of these, that's okay. There are lessons for each of the mentioned topics available at <a href="https://software-carpentry.org/lessons/" target="_blank" rel="noopener noreferrer">Software Carpentry</a>, a site developed specifically to help students learn the skills neecessary for successful research computing.</p>
                 <p style="margin: 0px">The <a href="https://astrobites.org/guides/guide-to-astrophysical-software/" target="_blank" rel="noopener noreferrer"> Astrobites Guide to Astrophysical Software</a> also provides a lot of useful information in regards to software.</p><!--  You should focus on the section on Python, as that is the most commonly used programming language in our subfield of astronomy.
                 </p> -->
+
+                <h3 id="terminal">Using the terminal/shell </h3>
+                <p>
+                        The shell is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use it to copy or delete files.
+                        Both the Rubin Science Platform and your installation of Anaconda Navigator (which will be covered in the following sectin on Python) will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the Rubin Science Platform it will be called a terminal. 
+                        <blockquote style="margin-left:0px;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
+                        <p>It is quite likely that you will rarely need to use the shell. It is still useful to become familiar with it, as it can make moving, copying, and renaming large batches of files much easier and faster.
+                            An in-depth tutorial is available at <a href="https://swcarpentry.github.io/shell-novice/" target="_blank" rel="noopener noreferrer"> Software Carpentry's "The Unix Shell" lesson.</a> Briefer overviews are available at the links below.</p>
+                    <ul class="indent1">
+                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php" target="_blank" rel="noopener noreferrer">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
+                            <li> <a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+
+                    </ul>
+
 
                 <h3  id="python">Using Python</h3>
                 <p>
@@ -292,7 +304,7 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                     <li>Anaconda Navigator 
                         <ul>
                             <li>Anaconda Navigator is a distribution of Python that comes pre-installed with many commonly used scientific software packages. Through it, you can run code directly in your browser! You can install it <a href="https://www.anaconda.com/products/navigator" target="_blank" rel="noopener noreferrer">here.</a> </li>
-                            <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need. However, when working with large datasets, it may be preferable to use the computers in the Remote Observing Station, as they have more computing power.</blockquote>
+                            <!-- <blockquote>Note: You <strong> DO NOT</strong> have to install Anaconda Navigator if you don't plan to work on your code without access to Wi-Fi. The Rubin Science Platform will have all the tools you need. However, when working with large datasets, it may be preferable to use the computers in the Remote Observing Station, as they have more computing power.</blockquote> -->
                             </ul>
                         </li>
 
@@ -316,18 +328,19 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
                     </ul>
                 </p>
 
-                <h3 id="terminal">Using the terminal/shell </h3>
+                <h3 id ="SQL"> Using SQL</h3>
                 <p>
-                        The shell is an interface for navigating and performing functions on files in your computer. In most cases, you will only need to use it to copy or delete files.
-                        Both the Rubin Science Platform and your installation of Anaconda Navigator will provide you with access to a version of this interface. In Anaconda it will be called “Anaconda/Conda Prompt”. On the Rubin Science Platform it will be called a terminal. 
-                        <blockquote style="margin-left:3rem;"> Remember that the Rubin Science Platform can only access files stored in its web-based directories. Your installation of Anaconda can access the files hosted locally on your computer. </blockquote>
-                        <p>It is quite likely that you will rarely need to use the shell. It is still useful to become familiar with it, as it can make moving, copying, and renaming large batches of files much easier and faster.
-                            An in-depth tutorial is available at <a href="https://swcarpentry.github.io/shell-novice/" target="_blank" rel="noopener noreferrer"> Software Carpentry's "The Unix Shell" lesson.</a> Briefer overviews are available at the liks below.</p>
-                    <ul class="indent1">
-                            <li><a href="https://linuxcommand.org/lc3_learning_the_shell.php" target="_blank" rel="noopener noreferrer">"Learning the Shell"</a> will help you get started with basic commands like changing directories and listing the files inside a directory.  </li>
-                            <li> <a href="https://explainshell.com/" target="_blank" rel="noopener noreferrer">explainshell.com</a> is a useful tool that allows you to enter a command and gives you a description of what that command does. </li>
+                    SQL, or Structured Query Language, is a programming language used when accessing data that is stored in a type of structure called a relational database. Essentialy, data is stored in tables sorted by rows and columns, similarly to a spreadsheet. The language enables the abilities to create, look up, modify, and relate data to one another.
+                </p>
+                <p>
+                It also enables fast sorting and filtering of large data sets, which are very common in the field of astronomy.
+                <br>
+                While there are many uses for SQL, you will currently only need it to access data from the Sloan Digital Sky Survey (SDSS), where we will be searching for merging galaxy pairs.
+                </p>
 
-                    </ul>
+                <ul>
+                    <li>The <a href=https://skyserver.sdss.org/dr16/en/help/howto/search/searchhowtohome.aspx>SDSS SQL Tutorial</a> will get you started using SQL queries to explore the vast amounts of data in the survey.</li>
+                </ul>
 
                 
                 <h3 id="git"> Version Control and Using Git</h3>
@@ -368,7 +381,7 @@ The most famous kilonova to date is the event called GW170817. It is famous for 
             <!-- table of contents -->
             <div class="abt-photoTB">
                 <h3 class="TC"><a href="#cosmology">Table of Contents</a></h3>
-                <ul style="font-size: 14px; padding-right:20 px">
+                <ul style="font-size: 14px; padding-right:20px">
                     <li></li>
                 </ul>
             </div><!-- abt-photoTB -->
