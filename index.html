@@ -326,7 +326,7 @@ Look out for my comments (greyed out text) like this.
                 <p>Git is a popular open-source version control system used by developers to keep track of the history of their code. It is used by many astronomers to share their code with one another and take feedback on what can be improved.</p>
                     <ul>
                         <li><a href="https://astrobites.org/2023/09/29/git-started/" target="_blank" rel="noopener noreferrer"> Astrobites' Guide to Git</a> is a useful resource for understanding how to use the GitHub system for version control.</li>
-                        <li><a href="https://learngitbranching.js.org/?locale=en_US" target="_blank" rel="noopener noreferrer">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files.</li>
+                        <li><a href="https://learngitbranching.js.org/?locale=en_US" target="_blank" rel="noopener noreferrer">Here</a> is an interactive walkthrough tutorial where you can get hands-on practice with using GitHub without messing with any important files. You do not need to go any further than the end of the "Ramping Up" sequence.</li>
                     </ul>
                         <!-- <p class="indent1">
                         When you're comfortable with that, you can clone <a href="https://github.com/mpwiesner/KDC">the KDC</a> repository, either to your local machine to use with Anaconda, or to the Rubin Science Platform. In order to do that, you'll need to understand the basics of using the <strong>terminal</strong>, which will be covered in the next section.
@@ -361,8 +361,18 @@ Look out for my comments (greyed out text) like this.
             <div class="abt-photoTB">
                 <h3 class="TC"><a href="#cosmology">Table of Contents</a></h3>
                 <ul style="font-size: 14px; padding-right:20px">
-                    <li><a href=#cosmo>Basic Cosmology</a></li>
-                    <li><a href=#radec>Right Ascension and Declination</a></li>
+                    <li><a href=#cosmo>Basic Cosmology</a>
+                        <ul>
+                            <li><a href=#hubble>Hubble's Law</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#obs">Observation</a>
+                        <ul>
+                           <li><a href=#radec>Right Ascension and Declination</a></li> 
+                        </ul>
+                    </li>
+
+                    
                 </ul>
             </div><!-- abt-photoTB -->
             <div class="abt-pts">
@@ -384,8 +394,21 @@ Look out for my comments (greyed out text) like this.
                             <!-- <li></li> -->
                         </li>
                     </ol>
+                </p>
+                <h3 class="indent1" id="hubble">Hubble's Law</h3>
+                <p class="indent2" style="margin-top: 1rem;">
                     The Hubble constant is named after Edwin Hubble, the astronomer whose name is also on the Hubble Space Telescope. However, many other astronomers were responsible for the discoveries that enabled Hubble to draw his conclusions.
                 </p>
+                <p class="indent2">
+                    Hubble's Law is a rule that relates the recession speed (how fast it's moving away from us) of a galaxy to its distance. It can be expressed as
+                </p>
+                <img class="center" style="width:12.5%" src="https://latex.codecogs.com/svg.image?v=H_{0}D" title="v=H_{0}D" />
+                <p class="center" style="width:65%">
+                    where <img src="https://latex.codecogs.com/svg.image?v" title="v" /> is the recession speed, <img src="https://latex.codecogs.com/svg.image?H_{0}" title="H_0" /> is the Hubble constant, and <img src="https://latex.codecogs.com/svg.image?D" title="D" /> is the proper distance.
+                </p>
+                <p class="indent2">More information about Hubble's Law can be found at <a href="http://230nsc1.phy-astr.gsu.edu/hbase/Astro/hubble.html">HyperPhysics</a>.</p>
+
+                <h2 id="obs">Observation</h2>
 
                     <h3 class="indent1" id="radec">What are Right Ascension and Declination?</h3>
                         <p class="indent2">
