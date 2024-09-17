@@ -225,13 +225,13 @@ p:last-child { margin-bottom: 0; }
 #main {
     padding: 30px;
 /*    width: 80%;*/
-    margin: 0 12% 0 15%;
+    margin: 0 5% 0 5%;
     height:80%;
     background: #888;
     position: fixed;
-    top: 45%;
-/*    left:7.5%;
-    right:7.5%;*/
+    top: 50%;
+    left:3%;
+    right:3%;
 /*    margin: 10%;*/
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -553,6 +553,10 @@ p:last-child { margin-bottom: 0; }
 .bio-graphy p.indent1, ul.indent1,h3.indent1 {
     display: inline-block;
     margin: .5rem .5em .5rem 3rem;
+}
+
+.bio-graphy ol.indent1 {
+    margin:.5rem .5rem .5rem 3rem;
 }
 
 .bio-graphy p.indent2, ul.indent2,h3.indent2 {
