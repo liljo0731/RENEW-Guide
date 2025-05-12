@@ -541,7 +541,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .bio-graphy h4 {
-    font-size: 14px;
+    font-size: 1rem;
     font-family: fredoka one;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -550,7 +550,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 
-.bio-graphy p.indent1, ul.indent1,h2.indent1, h3.indent1 {
+.bio-graphy p.indent1, ul.indent1,h2.indent1, h3.indent1, h4.indent1{
     display: inline-block;
     margin: .5rem .5em .5rem 3rem;
 }
@@ -559,7 +559,7 @@ p:last-child { margin-bottom: 0; }
     margin:.5rem .5rem .5rem 3rem;
 }
 
-.bio-graphy p.indent2, ul.indent2, h2.indent2, h3.indent2 {
+.bio-graphy p.indent2, ul.indent2, h2.indent2, h3.indent2, h4.indent2 {
     display: inline-block;
     margin: .25em .5em .5em 6em;
 }
