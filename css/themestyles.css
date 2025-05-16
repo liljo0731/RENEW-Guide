@@ -489,9 +489,9 @@ p:last-child { margin-bottom: 0; }
     background: transparent;
 }
 
-.bio-graphy b,strong, .qna-block b,strong {
+/*.bio-graphy b,strong, .qna-block b,strong {
     color: var(--abt-bold);
-}
+}*/
 
 .bio-graphy a {
     font-size: 14px;
@@ -528,7 +528,7 @@ p:last-child { margin-bottom: 0; }
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--abt-header);
-    margin: 20px 0 -5px 0;
+    margin: 16px 0 -5px 0;
 }
 
 .bio-graphy h3 {
@@ -537,7 +537,7 @@ p:last-child { margin-bottom: 0; }
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--abt-header2);
-    margin: 20px 0 -5px 0;
+    margin: 16px 0 -5px 0;
 }
 
 .bio-graphy h4 {
@@ -546,12 +546,17 @@ p:last-child { margin-bottom: 0; }
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--abt-header3);
-    margin: 20px 0 -5px 0;
+    margin: 16px 0 -5px 0;
+}
+
+.bio-graphy p {
+    display: block;
+    margin: .5rem .5rem .5rem 0rem;
 }
 
 
 .bio-graphy p.indent1, ul.indent1,h2.indent1, h3.indent1, h4.indent1{
-    display: inline-block;
+    display: block;
     margin: .5rem .5em .5rem 3rem;
 }
 
@@ -560,7 +565,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .bio-graphy p.indent2, ul.indent2, h2.indent2, h3.indent2, h4.indent2 {
-    display: inline-block;
+    display: block;
     margin: .25em .5em .5em 6em;
 }
 
