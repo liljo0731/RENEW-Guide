@@ -575,6 +575,14 @@ p:last-child { margin-bottom: 0; }
     margin-right: auto;
 /*    width: 50%;*/
 }
+
+img.equation {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:10%;
+}
+
 code {
     font-size: 12px;
 /*    background-color: #eee;*/
@@ -886,3 +894,6 @@ em-frame {
     margin: 0 0 10px 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}

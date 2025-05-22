@@ -45,6 +45,21 @@ Look out for my comments (greyed out text) like this.
 <!-- https://cappuccicons.com/ -->
 <script src="https://pull.cappuccicons.com/cpf.js"></script>
 
+<!-- MathJax styling -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+<!-- MathJax script -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 </head>
 <body>
 
@@ -402,15 +417,16 @@ Look out for my comments (greyed out text) like this.
                 <p class="indent2" style="margin-top: 1rem;">
                     The Hubble constant is named after Edwin Hubble, the astronomer whose name is also on the Hubble Space Telescope. However, many other astronomers were responsible for the discoveries that enabled Hubble to draw his conclusions.
                 </p>
-                <p class="indent2">
+                <p class="indent2" style="width: 80%;">
                     Hubble's Law is a rule that relates the recession speed (how fast it's moving away from us) of a galaxy to its distance. It can be expressed as
-                </p>
-                <img class="center" style="width:10%" src="https://latex.codecogs.com/svg.image?v=H_{0}D" title="v=H_{0}D" />
-                <p class="indent2" style="width:65%">
+                
+                <br>
+                <img class="equation" src="https://latex.codecogs.com/svg.image?v=H_{0}D" title="v=H_{0}D" />
+                
                     where <img src="https://latex.codecogs.com/svg.image?v" title="v" /> is the recession speed, <img src="https://latex.codecogs.com/svg.image?H_{0}" title="H_0" /> is the Hubble constant, and <img src="https://latex.codecogs.com/svg.image?D" title="D" /> is the proper distance.
                 </p>
-                <p class="indent2">More information about Hubble's Law can be found at <a href="http://230nsc1.phy-astr.gsu.edu/hbase/Astro/hubble.html">HyperPhysics</a>.</p>
-
+                <p class="indent2">More information about Hubble's Law can be found at <a href="http://230nsc1.phy-astr.gsu.edu/hbase/Astro/hubble.html">HyperPhysics</a>.
+                </p>
                 
                 <h3 class="indent1" id="sirens">Standard Sirens</h3>
                 <p class ="indent2"> One major challenge in astronomy is measuring the distance to objects. Some objects can be measured using parallax, or the change in viewing angle at different points in the year. However, because the change in viewing angle decreases sharply with a star's distance, we can only measure objects that are "close by" - in astronomical terms at least. This method is limited to measuring objects about 1000 parsecs( 3 &middot 10<sup>16</sup> km).
