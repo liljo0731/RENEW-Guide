@@ -569,6 +569,11 @@ p:last-child { margin-bottom: 0; }
     margin: .25em .5em .5em 6em;
 }
 
+.bio-graphy p.indent3, ul.indent3, h2.indent3, h3.indent3, h4.indent3 {
+    display: block;
+    margin: .25em .5em .5em 9em;
+}
+
 .center {
     display: block;
     margin-left: auto;
