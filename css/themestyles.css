@@ -332,7 +332,7 @@ p:last-child { margin-bottom: 0; }
 
 .allviews {
     transition: 0.6s ease-in-out;
-    width: 400%;
+    width: 500%;
     height:100%;
     overflow-y: auto;
     overflow: hidden;
@@ -340,7 +340,7 @@ p:last-child { margin-bottom: 0; }
 
 .view {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 100%;
     overflow: hidden;
 }
@@ -390,7 +390,7 @@ p:last-child { margin-bottom: 0; }
   padding: 2px 2px;
   border-radius: 4px;
   margin: 0 2px 0 0;
-  scroll-margin-top:12px;
+  /*scroll-margin-top:12px;*/
   color:inherit;
   text-decoration:underline;
 }
@@ -555,7 +555,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 
-.bio-graphy p.indent1, ul.indent1,h2.indent1, h3.indent1, h4.indent1{
+.bio-graphy p.indent1, ol.indent1, ul.indent1, h2.indent1, h3.indent1, h4.indent1{
     display: block;
     margin: .5rem .5em .5rem 3rem;
 }
@@ -564,12 +564,12 @@ p:last-child { margin-bottom: 0; }
     margin:.5rem .5rem .5rem 3rem;
 }
 
-.bio-graphy p.indent2, ul.indent2, h2.indent2, h3.indent2, h4.indent2 {
+.bio-graphy p.indent2, ol.indent2, ul.indent2, h2.indent2, h3.indent2, h4.indent2 {
     display: block;
     margin: .25em .5em .5em 6em;
 }
 
-.bio-graphy p.indent3, ul.indent3, h2.indent3, h3.indent3, h4.indent3 {
+.bio-graphy p.indent3, ol.indent3, ul.indent3, h2.indent3, h3.indent3, h4.indent3 {
     display: block;
     margin: .25em .5em .5em 9em;
 }

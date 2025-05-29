@@ -82,7 +82,8 @@ MathJax = {
     <div class="hbtn hbtn-one hbtn-active" id=home>   Home        </div>
     <div class="hbtn hbtn-two" style="position: relative;" id=programming>               Programming        </div>
     <div class="hbtn hbtn-three" style="position: relative;"id=cosmology>             Cosmology    </div>
-    <div class="hbtn hbtn-four" style="position: relative;"id=contact>              Contact       </div>
+    <div class="hbtn hbtn-four" style="position: relative;"id=statistics>           Statistics     </div>
+    <div class="hbtn hbtn-five" style="position: relative;"id=contact>              Contact       </div>
     <!-- <div class="hbtn hbtn-four">              contact       </div> -->
     </div>
     
@@ -404,8 +405,6 @@ MathJax = {
 
                         </ul>
                     
-
-                    
                 </ul>
             </div><!-- abt-photoTB -->
             <div class="abt-pts">
@@ -560,7 +559,58 @@ MathJax = {
     </div><!-- abt-layout -->
 </div><!-- end of COSMOLOGY panel -->
 
-<div class="view"><!-- contact panel --------------------------------------->
+<div class="view" id="statistics"><!-- STATISTICS panel -->
+<div class="abt-layout">
+    <div class="abt-basic">
+        <!-- table of contents -->
+        <div class="abt-photoTB">
+            <h3 class="TC"><a href="#statistics">Table of Contents</a></h3>
+            <ul style="font-size: 14px; padding-right:20px">
+                <li> <a href="#gaussian">Gaussian Distributions</a></li>
+                <li><a href="#chisquare">$\chi^{2}$ Tests</a></li>
+            </ul>
+
+        </div>
+        <!-- <div class="abt-photo"></div> -->
+
+        <div class="abt-pts">     
+        </div><!--abt-pts-->
+    </div><!--abt-basic-->
+    
+    <div class="abt-bio">
+        <div class="bio-graphy">
+        <p>
+            You will need to know some basic statistics for this project. Don't worry if you are unfamiliar, as the concepts are quite simple at their cores.
+            <br>
+            The main concepts you will need to understand are Gaussian distributions and $\chi^{2}$(spelled chi-squared, pronounced Ky squared) tests.
+        </p>
+        <h2 id="gaussian">Gaussian Distributions</h2>
+        <p class="indent1">
+            
+        </p>
+        <h2 id="chisquare">$\chi^{2}$ Tests</h2>
+        <p class="indent1">
+            A <a href=https://en.wikipedia.org/wiki/Chi-squared_test target="_blank" rel="noopener noreferrer">chi-squared test </a> is a method of inference that determines whether there is enough data to reject a hypothesis. Typically, when applying this test, observations are categorized in mutually exclusive classes. If the observations truly are independent of one another, then the test statistic follows a $\chi^{2}$ frequency distribution and confirms the <strong>null hypothesis.</strong> The null hypothesis is the hypothesis that any set of variables being studied have no correlation. In other words, it states that the two variables are independent.
+
+            Here are two brief videos to help you understand how one calculates the value for a $\chi^{2}$ test.
+            <ol class="indent2">
+                <li><a href=https://youtu.be/HKDqlYSLt68 target="_blank" rel="noopener noreferrer">The Organic Chemistry Tutor - Chi Square Test</a></li>
+                <li><a href=https://www.youtube.com/watch?v=jABsbNBPXIk target="_blank" rel="noopener noreferrer">Khan Academy - Chi-square statistic for hypothesis testing</a></li>
+            </ol>
+
+        </p>
+
+
+   
+<!-- end of biography space ----------------------------------------------->
+        
+        </div><!--bio-graphy-->
+        
+    </div><!--abt-bio-->
+</div><!--abt-layout-->
+</div><!--end of STATISTICS panel -->
+
+<div class="view" id="contact"><!-- contact panel --------------------------------------->
     
     <div class="view-photo qna-photo"></div>
     <div class="qna-content">
@@ -653,8 +703,7 @@ Each tag blog consists of a CATEGORY and the TAGS. Copy and paste the block belo
 
 </div><!--contentview--></div><!--content-->
 </div><!--main-->
-<div style="position:fixed;bottom:12px;left:50%;transform:translate( -50%);font-size:12px;letter-spacing:1px;text-align:center;background-color: #ffffff82;color:#000;padding: 4px 7px;font-weight:1000;border-radius:5px;">Content written by:
-<br> Lillian Joseph at Benedictine University <br> and Simran Kaur at University of Michigan</div>
+<div style="position:fixed;bottom:8px;left:50%;transform:translate( -50%);max-height:10vh;width:60vw;font-size:12px;letter-spacing:1px;text-align:center;background-color: #ffffff82;color:#000;padding: 4px 7px;font-weight:1000;border-radius:5px;">Content written by Lillian Joseph at Benedictine University and Simran Kaur at University of Michigan</div>
 
 <a title="based on quartz page by xuethms" href="https://xuethms.tumblr.com"><div style="position:fixed;bottom:12px;right:12px;font-size:9px;letter-spacing:1px;background-color:#fff;color:#000;padding: 4px 7px;border-radius:5px;cursor:pointer;font-weight:1000">xue</div></a>
 
@@ -693,6 +742,7 @@ $(".hbtn-one").click(function(){
     $(".hbtn-two").removeClass("hbtn-active");
     $(".hbtn-three").removeClass("hbtn-active");
     $(".hbtn-four").removeClass("hbtn-active");
+    $(".hbtn-five").removeClass("hbtn-active");
     $(".allviews").css("margin-left", "0");
 });
     
@@ -701,6 +751,7 @@ $(".hbtn-two").click(function(){
     $(".hbtn-two").addClass("hbtn-active");
     $(".hbtn-three").removeClass("hbtn-active");
     $(".hbtn-four").removeClass("hbtn-active");
+    $(".hbtn-five").removeClass("hbtn-active");
     $(".allviews").css("margin-left", "calc(-100%)");
 });
     
@@ -709,6 +760,7 @@ $(".hbtn-three").click(function(){
     $(".hbtn-two").removeClass("hbtn-active");
     $(".hbtn-three").addClass("hbtn-active");
     $(".hbtn-four").removeClass("hbtn-active");
+    $(".hbtn-five").removeClass("hbtn-active");
     $(".allviews").css("margin-left", "calc(-200%)");
 });
     
@@ -717,7 +769,16 @@ $(".hbtn-four").click(function(){
     $(".hbtn-two").removeClass("hbtn-active");
     $(".hbtn-three").removeClass("hbtn-active");
     $(".hbtn-four").addClass("hbtn-active");
+    $(".hbtn-five").removeClass("hbtn-active");
     $(".allviews").css("margin-left", "calc(-300%)");
+});
+
+$(".hbtn-five").click(function(){
+    $(".hbtn-one").removeClass("hbtn-active");
+    $(".hbtn-two").removeClass("hbtn-active");
+    $(".hbtn-three").removeClass("hbtn-active");
+    $(".hbtn-four").addClass("hbtn-active");
+    $(".allviews").css("margin-left", "calc(-400%)");
 });
     
 $(".qna-qn").click(function(){
